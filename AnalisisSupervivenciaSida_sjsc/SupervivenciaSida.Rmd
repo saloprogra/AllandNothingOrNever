@@ -1,0 +1,750 @@
+---
+output:
+  pdf_document: default
+---
+
+<!-- pag sin encabezado para portada  -->
+
+```{=tex}
+\begin{titlepage}
+    \includegraphics[width=5cm]{udla.png}
+    \begin{center}
+        \begin{LARGE}
+            \textsc{Informe de Magister en Data Science \\
+            \textsc{ \\}
+            Octubre 2022 \\ }
+            \textsc{--- \\
+            \textsc{ \\}
+            \textsc{ \\}
+            Datos de supervivencia del SIDA en Australia (Aids2)}
+            \textsc{ \\}
+            
+        \end{LARGE}
+        \textsc{ \\}
+        \textsc{ \\}
+        \textsc{ \\}
+        \textsc{ \\}
+        \includegraphics[width=0.7\linewidth]{imgvih.jpg}
+    \end{center}
+    \textsc{ \\}
+    \textsc{ \\}
+    \textsc{ \\}
+    \begin{flushright}
+        \textit{$Programación$ en R $NRC:8189$ \\
+        Profesora : Mónica Panes.\\
+        Nombre : Salomón Salinas \\
+        }
+    \end{flushright}
+\end{titlepage}
+```
+<!-- pag sin encabezado para TOC -->
+
+```{=tex}
+\begin{titlepage}
+    \tableofcontents
+\end{titlepage}
+```
+\pagebreak
+
+```{r setup, include=FALSE}
+rm(list = ls())   # limpiamos nuestro entorno cada vez que lo ejecutamos,\tableofcontents
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) # evitar que aparezcan mensajes o warnings cuando se compila
+```
+
+# 1.- Introducción.
+
+<p align="justify">
+El objetivo en realizar este estudio nos lleva a saber cómo está conformada la dataset Aids para proceso de cambios tanto en su estructura y también en limpieza de datos, realizar una exploración en su estructura y en sus datos para observar su comportamiento en cuanto a sus resultados, realizar también una visualización de sus variables, para informar su relación entre sus campos, aportando al desarrollo a los cuestionamientos para obtener resultados de la dataset, teniendo como objetivo principal realizar un estudio de los pacientes que están diagnosticado con VIH, se utilizarán diferentes librerías si es necesario para confeccionar los resultados tal como es el caso tidyverse que proporciona un conjunto de librerías para uso de ciencias de datos, para presentación, del informe se usará rmarkdown y tablas de presentación con knitr::, con la librería kable para visualizar, y por último presentación de datos con ggplot2.
+
+</p>
+
+# 2.- Antecedentes.
+
+Datos sobre pacientes diagnosticados de SIDA en Australia antes del 1 de julio de 1991. Este marco de datos contiene 2843 filas y tiene 7 columnas para lo cual se mostrará sus datos y sus atributos en la tabla siguiente:
+
+| Atributo             | Descripción                                                           | Tipo     | Categoría                       |
+|-------------------|-------------------------|-------|---------------|
+| State                | Estado Origen Agrupo: "NSW "incluye ACT y"otros" es WA, SA, NT y TAS. | Char,    | Cualitativa                     |
+| Sex                  | Sexo del paciente                                                     | Char     | Cualitativa                     |
+| Diagnosis            | Fecha Diagnóstico                                                     | Char     | Date                            |
+| Death                | Fecha de Muerte fin de observación                                    | Char     | Date                            |
+| Status               | "A"(vivo) o "D" (muerto) al final de la observación.                  | Char     | Categórica, Caulitativa Ordinal |
+| TransmissionCategory | Categoría de transmisión comunicada.                                  | char     | Categórica, Cualitativa         |
+| Age                  | Edad(años) en el momento del diagnóstico                              | Numerico | Cauntitativo, Discreta          |
+|                      |                                                                       |          |                                 |
+
+: Tabla de características para el proceso de datos
+
+# 3.- Librerías a Utilizar.
+
+<p align="justify">**a)**  if(!require(tidyverse)) { install.packages("tidyverse"); library(tidyverse) } Conjunto de paquetes de datos que estan incluidos para realizar analisis o ciencia de datos.</p>
+
+**Paquetes Contenidos en tydiverse**
+
+1 ggplot2\
+2 dplyr\
+3 tidyr\
+4 readr\
+5 purrr\
+6 tibble\
+7 stringr\
+8 forcats
+
+<p align="justify">**b)  **if(!require(readxl)) { install.packages("readxl"); library(readxl) } lectura de archivo xlsx.</p>
+
+<p align="justify">**c)  **if(!require(readr)) { install.packages("readr"); library(readr) } lectura de documento csv.</p>
+
+
+```{r, echo=FALSE}
+# conjunto de cargas de paquetes que seran instalados si no existe, en caso contrario lo leerrá
+if(!require(tidyverse)) { install.packages("tidyverse"); library(tidyverse) } # Conjunto de paquetes de datos que estan incluidos para realizar analisis o ciencia de datos.
+if(!require(readxl)) { install.packages("readxl"); library(readxl) } # lectura de archivo xlsx
+if(!require(readr)) { install.packages("readr"); library(readr) } # lectura de documento csv
+
+# Librerías que son llamadas durante el proyecto para uso del proceso de codigos para obtener un resultado.
+library(tidyverse) # llamada a la librería de tidyverse.
+library(readxl) # llamada a la librería de archivos excel.
+library(scales) # para utilizar scales en pie en porcentajes
+library(MASS)
+```
+
+# 4.- Carga de datos.
+
+Conección de dataset en una variable Aids, que nos permite la carga de datos.
+
+**Cundo el archivo no está en un directorio directamente en rstudio, se usa la extensión larga.**
+
+Aids \<- read_excel("C:/Users/salop/OneDrive/Escritorio/EnvR/ MagisterUdla/Tarea3/Aids2.xlsx", / col_types = c("text", "text", "numeric", / "numeric", "text", "text", "text")) /
+
+**Cuando el archivo esta cargado en el directorio de rstudio, cargado en la variable Aids.**
+Aids <- read_excel("Aids2.xlsx")
+
+```{r, echo=FALSE}
+# Conección de la data de excel a la variable Aids
+Aids <- read_excel("Aids2.xlsx") # lectura de la datasets excel alojado en el objeto Aids
+
+```
+
+# 5.- Explorando la Estructura Dataset Aids2.
+
+Para el conjunto de datos, empezamos analizando su composición de la dataset contenida en Excel y conectada por readxl, ahora usaremos algunas funciones para observar su estructura.
+
+**a) Presentación por la función head, cinco primeros datos**
+```{r, echo=FALSE}
+Aids2<-data.frame(Aids)# convertimos la dataset en una dataframe nueva con nombre Aids.
+# mostramos los primeros 5 campos de la tabla.
+knitr::kable(head(Aids2,5)) # con head nos permite visualizar los 5  primeros datos de la tabla o especificar cuantos datos con n
+
+```
+
+: Detalle de contenido de las primeras filas de la dataset.
+
+
+**b) Presentación por la función tail, cinco últimos datos**
+```{r, echo=FALSE}
+knitr::kable(tail(Aids2,5)) # knitr fuerza a la función kabble a convertirla en una tabla mostrando los 5 últimos datos de la dataset.
+```
+: Detalle de presentación de las últimas 5 filas.
+
+Observamos que la dataset Aids esta con sus filas completas, igualmente procedemos a verificar si tiene valores nulos y sus campos únicos.
+
+**c) Búscando valores nulos por los campos de la dataset con la función apply**
+
+```{r, echo=FALSE}
+# aplicamos la función apply para obtener los valores nulos de cada campo.
+appl<- apply(X = is.na(Aids2), MARGIN = 2, FUN = sum)  
+knitr::kable(t(appl)) # muestra una tabla con kable para presentación.
+```
+: Tabla que muestra un resumen de los 'NA' en cada atributo de la dataset.
+
+\
+
+**d) Buscando los valores únicos por cada campo de la dataset**
+
+```{r, echo=FALSE}
+# Usamos el operador pipe para realizar una consulta con la función summarise_all, así obtenemos los totales de NA por columnas. 
+aidp<-Aids2 %>% summarise_all(funs(n_distinct(.))) # Función que encuentra todos los valores únicos.
+knitr::kable(aidp) # muestra una tabla con kable para presentación.
+```
+: Tabla que nos muestra sus valores únicos por sus atributos.
+
+
+**e) Visualizando la estructura de la dataset**
+
+```{r,echo=FALSE}
+# Pasamos  nuestra dataframe intemedio de la función glimpse que observaremos como está la estructura la dataframe Aids.
+glimpse(Aids2) # 
+```
+
+**f) Obteniendo algunas características de la dataset.**
+
+```{r, echo=FALSE}
+# Obtención de la dimensión de la dataframe
+cat("El tamaño de la dimensión es : ",dim(Aids2),"\n")
+# obtenemos filas y columnas por separados indicados anteriormente
+cat("con total de columnas ", ncol(Aids2), "con un total de filas ", nrow(Aids),"\n")
+# Obtención de los nombres de columnas
+cat("Las columnas son: (", names(Aids2),")\n")
+```
+
+<p align="justify">
+
+En conclusión, en general se informa que la dataset tiene todos los campos sin valores nulos, tiene nombres en ingles que para comprenser mejor se cambiarán los nombres de los atributos, además, tiene campos como Age con valor doble (dbl), Diagnosis como (dttm), Death como (dttm), dando la idea de cambiar su estructura, adaptarla y manipularla de una mejor forma.
+
+</p>
+
+
+**g) Transformando los datos, cambiando valores en sus campos**
+
+Se procedió a cambiar la estructura creando un nuevo dataframe y  la variable contenida es Aidsn, en los campos como las fechas se dejó como as.character() y en ambas fechas se cambió el nombre como F_Diagnostico y F_Muerte, en Age se cambió por Edad y su valor como as.integer(), State se cambío por nombre Estado, Sex se cambió por nombre Sexo, el campo State se cambio por nombre E_Origen, el campo TransmissionCategory se cambió por nombre C_Transmision, y por último el campo Status se cambió por Estado. y cualquier otro cambió se modificará la dataset cambiando el nombre de ella, para continuar con el proceso de ello, paso a paso. 
+
+```{r, echo=FALSE}
+# proceso de transformación de datos en sus atributos, creando una nueva tabla Aids3 con cambios en la dataset oroginal anterior
+Aids3<-data.frame(E_Origen=Aids2$State,Sexo=Aids2$Sex,F_Diagnostico=as.Date(Aids2$Diagnosis),
+                F_Muerte=as.Date(Aids2$Death),Estado=Aids2$Status,C_Transmision=Aids2$TransmissionCategory,
+                Edad=as.integer(Aids2$Age))
+
+
+knitr::kable(head(Aids3,5)) # muestra una tabla con kable para presentación.
+```
+
+# 6.- Desarrollo.
+
+En este apartado veremos como justificamos cada pregunta que se nos presenta, se adaptará la dataset en caso de que así, lo requiera para responder las preguntas tales como, se presenta a continuación:
+
+**1.	Limpieza y administración de los datos.**
+
+<p align="justify">Se Analizó la estructura de la tabla, se revisó la data en Excel y se dejó los campos fechas en formato de  fecha corta, además se reestructuró la tabla y se dejó los campos fechas como $date$, edad como $integer$, los demás atributos como $character$, por lo tanto, se verifica que los datos están completos con un total 2243 datos y 7 columnas al principio, cambiando el nombre de ellas para comodidad de la lectura de estos atributos, tales como: E_Origen,Sexo,F_Diagnostico,F_Muerte,Estado,C_Transmision,Edad, que tiene valores diferentes como la fecha que se transforma a numerico etc.</p>
+
+**2.	Análisis y resumen de los datos.**
+
+**Resumen de estadística** 
+
+```{r, echo=FALSE}
+
+fx<-Aids3 %>%  select_all() %>% # seledciona todos los campos de la tabla
+  summary() # registra un sumario a la toatalidad de los atributos, mínimo, máximo, media,mediana y quartiles.
+knitr::kable(fx)  # muestra una tabla con kable para presentación.
+```
+: Tabla con un sumario general de sus atributos, visualizando algunas características que podemos graficar durante el desarrollo del proyecto.
+
+> El campo E_Origen, es un campo de tipo character con 2843 datos.
+
+> El campo Sexo, que es el genero del paciente que es de tipo character con 2843 datos.
+
+> El campo F_Diagnostico, que es la fecha desde el momento que se le descubrio la enfermedad siendo un tipo de dato Date, teniendo un mínimo de fechas 1977-09-09, y un máximo de 1986-06-15, teniendo su mayor concentración de fechas en primer cuartil con fechas 1982-10-14 hasta el tercer cuartil con 1985-05-11, permitiendo ver una mediana de 1984-02-28 y una media de 1983-12-09, siendo no uniforme en su distribuión en sus fechas.
+
+> El campo F_Muerte, que es la fecha de deceso o al término del proceso, con un total de 2843 fechas de tipo date, detallando que su fecha mínima es 1978-02-23, y su máximo en fecha es de 1986-06-16, la mayor concentración de sus fechas esta entre primer cuartil 1984-03-05 y tercer cuartil 1986-06-16, su media y mediana se concentra en Median :1985-09-20 y Mean :1985-01-18 alejándose entre sus meses lo que indicaría que no es una distribución muy uniforme.
+
+
+> El campo Estado, campo de sobrevivencia si sigue o no con vida una vez diagnosticado la enfermedad, es de tipo character con un total de 2843 datos.
+
+> El campo C_Transmision, es un campo de tipo character que tiene como característica de ver por qué tipo de vía se infectó el paciente, tiene un total de 2843 datos.
+
+
+> El campo Edad, contiene la edad de los pacientes, al momento del diagnóstico que se les realiza, tiene una mínima de edad cero, que podría ser que llego grave, que nació y murió, etc. y un máximo de edad de 82 años. la mayoría de edad está en el primer cuartil con 30 y tercer cuartil con 43 años, teniendo una mediana de 37 años y una media de 37.41 años, lo que podría indicar que igual es un poco uniforme en su distribución de sus datos.
+
+\
+
+\
+**Resumiendo campos con valores únicos y de tipos cualitativos y numéricos**
+
+> Se realizara visualizaciones aplicando todas las medidas de tendencia central representada en gráficos, se creará tablas para los datos cualitativos y también para los datos numéricos.
+
+**a) Campo cualitativo State**
+
+```{r,echo=FALSE, out.width='70%', out.height='40%',fig.align='center',fig.pos='H'}
+# usamos dplyr para consultar por los datos Aids2, agrupándolos por campo state
+Tabla1 <- Aids2 %>% group_by(State) %>% summarise(Total=n()) %>%   
+    dplyr::mutate(Porcentaje = round(Total/sum(Total)*100, 1))  # mutate realiza cambios en la tabla entregando un campo porcentaje.
+knitr::kable(Tabla1) # muestra una tabla con kable para presentación.
+
+ggplot(Tabla1, aes(x = State, y=Total, fill=State) ) +                       
+  geom_bar(width = 0.9, stat="identity", position = position_dodge())+                  
+  ylim(c(0,2000))+                                                          
+  labs(x="Estado de los Pacientes", y= "Frecuencia \n (Porcentajes)") + 
+  labs(fill = "")+                                                         
+  geom_text(aes(label=paste0(Total," ", "", "\n(", Porcentaje, "%",")")),  
+            vjust=1.3,                         
+            color="black",                     
+            hjust=0.5,                         
+            position = position_dodge(0.9),    
+            angle=0,                           
+            size=4.0                           
+            ) +  
+  scale_fill_discrete(name = "Estado Origen", labels = c("NSW", "Other","QLD","VIC")) +  
+  theme(axis.text.x = element_text(angle = -45, vjust = 1, hjust=-0.3)) +  
+  theme_linedraw() +                                                      
+  theme(legend.position = "left") +                                       
+  facet_grid(~"Diagrama de barras para la variable State")     
+```
+
+> Concluyendo que en el gráfico se observa que en el campo estado que la categoría NSW, son los que más pacientes con VIH tiene con un total de 1780, representando la mayor parte de sus datos con un porcentaje de 62.6 %, después sigue la categoría VIC con un 20.7 % de sus datos, la categoría Other con 8.8 % y finalmente la categoría QLD con un 7.9 % como se representa en el gráfico.
+
+\pagebreak
+
+**b) Campo cualitativo Sex**
+
+```{r,echo=FALSE, out.width='70%', out.height='40%',fig.align='center',fig.pos='H'}
+Tabla2 <- Aids2 %>% group_by(Sex) %>% summarise(Total=n()) %>%   
+    dplyr::mutate(Porcentaje = round(Total/sum(Total)*100, 1))  # mutate realiza cambios en la tabla entregando un campo porcentaje
+knitr::kable(Tabla2)
+
+ggplot(Tabla2, aes(x = Sex, y=Total, fill=Sex) ) +                       
+  geom_bar(width = 0.6, stat="identity", position = position_dodge())+                  
+  ylim(c(0,2755))+                                                          
+  labs(x="Genero de los Pacientes", y= "Frecuencia \n (Porcentajes)") + 
+  labs(fill = "")+                                                         
+  geom_text(aes(label=paste0(Total," ", "", "\n(", Porcentaje, "%",")")),  
+            vjust=1.0,                         
+            color="black",                     
+            hjust=0.5,                         
+            position = position_dodge(0.9),    
+            angle=0,                           
+            size=3.0                           
+            ) +  
+  scale_fill_discrete(name = "Género", labels = c("Femenino", "Masculino")) +  
+  theme(axis.text.x = element_text(angle = -45, vjust = 1, hjust=-0.3)) +  
+  theme_linedraw() +                                                      
+  theme(legend.position = "left") +                                       
+  facet_grid(~"Diagrama de barras para la variable Sex")     
+```
+> En este estudió nos preguntamos si los pacientes pudieron ser más hombres o mujeres, concluyendo a través de la visualización que son pocos los pacientes femeninos que  están con el problema de la enfermedad, teniendo un total de 89 mujeres representado un 3.1% de los pacientes enfermos, en cambio, los hombres tienen un total de 2754 pacientes diagnosticado con la enfermedad, representado un total de 96.9 % de los pacientes.
+
+**c) Campo cualitativo Status**
+
+```{r, echo=FALSE, out.width='70%', out.height='40%',fig.align='center',fig.pos='H'}
+Tabla3 <- Aids2 %>% group_by(Status) %>% summarise(Total=n()) %>%   
+    dplyr::mutate(Porcentaje = round(Total/sum(Total)*100, 1))   # mutate realiza cambios en la tabla entregando un campo porcentaje
+knitr::kable(Tabla3) # pasamos a tabla por la función kable para visualizarla.
+
+ggplot(Tabla3, aes(x = Status, y=Total, fill=Status) ) +                       
+  geom_bar(width = 0.6, stat="identity", position = position_dodge())+                  
+  ylim(c(0,2755))+                                                          
+  labs(x="Estados de los Pacientes", y= "Frecuencia \n (Porcentajes)") + 
+  labs(fill = "")+                                                         
+  geom_text(aes(label=paste0(Total," ", "", "\n(", Porcentaje, "%",")")),  
+            vjust=1.0,                         
+            color="black",                     
+            hjust=0.5,                         
+            position = position_dodge(0.9),    
+            angle=0,                           
+            size=3.0                           
+            ) +  
+  scale_fill_discrete(name = "Estado Sobreviviencia", labels = c("A=Vivo", "D=Muerto")) +  
+  theme(axis.text.x = element_text(angle = -45, vjust = 1, hjust=-0.3)) +  
+  theme_linedraw() +                                                      
+  theme(legend.position = "left") +                                       
+  facet_grid(~"Diagrama de barras para la variable Sex")     
+```
+
+> Como una forma de que si los pacientes, diagnosticado, están aún con vida o no, después, que la enfermedad se le registró, se concluye que en el proceso de fecha al momento del diagnóstico se han registró en sus estados los siguiente, de la totalidad, del tamaño de la dataset se han muerto un total de 1761 pacientes con la enfermedad, representado con un total de 61,9 %, y estando aún con vida un total de 1082 pacientes, representando con un total de 38.1%.
+
+
+**d) Campo cualitativo TransmissionCategory**
+
+```{r, echo=FALSE, out.width='70%', out.height='30%',fig.align='center',fig.pos='H'}
+Tabla4 <- Aids2 %>% group_by(TransmissionCategory) %>% summarise(Total=n()) %>%   # seleccion por grupo TransmissionCategory y obtenemos un sumario de contabilizar los totales.
+    dplyr::mutate(Porcentaje = round(Total/sum(Total)*100, 1))  # mutate realiza cambios en la tabla entregando un campo porcentaje
+knitr::kable(Tabla4)
+
+ggplot(Tabla4, aes(x = TransmissionCategory, y=Total, fill=TransmissionCategory) ) +                       
+  geom_bar(width = 0.6, stat="identity", position = position_dodge())+                  
+  ylim(c(0,2486))+                                                          
+  labs(x="Estados de los Pacientes", y= "Frecuencia \n (Porcentajes)") + 
+  labs(fill = "")+                                                         
+  geom_text(aes(label=paste0(Total," ", "", "\n(", Porcentaje, "%",")")),  
+            vjust=1.0,                         
+            color="black",                     
+            hjust=0.5,                         
+            position = position_dodge(0.9),    
+            angle=0,                           
+            size=3.0                           
+            ) +  
+  scale_fill_discrete(name = "Categoría Transmisión", labels = c("Blood", "Haem","Het","Hs","Hsid","id","Mother","Other")) +  
+  theme(axis.text.x = element_text(angle = -45, vjust = 1, hjust=-0.3)) +  
+  theme_linedraw() +                                                      
+  theme(legend.position = "left") +                                       
+  facet_grid(~"Diagrama de barras para la variable categoría de transmisión")     
+```
+
+> Para el entendimiento de como los pacientes fueron infectados se puede concluir lo siguiente, la mayor parte de los pacientes se transmitió la enfermedad por la vía de categoría HS, con un total de 2465 pacientes, que llevándolo a porcentaje representa un total de 86.7% ya luego bajando por transmisión por sangre representado por un total de 94 pacientes, obteniendo un porcentaje de 3.3%, bajando con las otras categorías.
+
+
+
+**e) Campo cuantitativo Edad**
+
+
+```{r, echo=FALSE, out.width='70%', out.height='40%',fig.align='center',fig.pos='H'}
+ggplot(Aids2, aes(as.numeric(Age))) +
+   geom_histogram(binwidth = function(x) 20 / (sqrt(length(x))), colour="black", fill="orange") +
+   labs(x="Edades",y="Cantidades") +                       
+   ggtitle("Histogramas Edades de los Pacientes") +
+  
+   facet_wrap(~Sex, scales = 'free_x') 
+```
+
+> En cuanto a la categoría de las Femeninas tienen valores de edades atípicos que son muy bajos como edades de recién nacidos y edades que alcanza los 73 años, los contagiados femeninas son más personas ente los 20 y 38 años a simple vista pero indicando que su media y mediana no están uniformes.
+
+> En cuanto a las Edades de los pacientes Masculinos tienen edades entre los 19 y 66 años, formado una distribución más uniforme entre sus media y mediana. por ende, igual tiene valores atípicos en edades comenzando pacientes de menos de un año y pacientes más ancianos pero son los pocos, dando a conocer que los contagioso son adultos jóvenes.
+
+
+**Gráficos de Campos Relacionados**
+
+
+**a) Relación Estado del paciente y edad al momento del diagnóstico**
+```{r, echo=FALSE, out.width='70%', out.height='40%',fig.align='center',fig.pos='H'}
+# Representación de las variables por su categoria 
+#par(mfrow = c(1, 2))
+ggplot(data=Aids3, aes(x=Estado, y=Edad, fill=Estado)) + 
+    geom_boxplot()+
+    xlab("Estado(A = vivo - D= Muerto)") + 
+    ylab("Edad al momento del daignóstico") + 
+    ggtitle("Estado del Paciente ")+
+    theme (text = element_text(size=12))+
+    labs(fill = "Estados del Paciente ")+
+    theme_minimal()
+
+```
+
+> Sin importar el número de pacientes, se sigue una tendencia de ambos en pacientes vivos y pacientes muertos están en una media de los alrededores de los 37 años, igualmente se observa valores atípicos antes del segundo cuartil, antes los 18 años y después del tercer cuartil a la edad después de los 60 años. Llegando a la conclusión de que los pacientes que están vivos o están muertos la mayoría están en los 30 y 45 años. 
+
+**b) Relación entre el campo de transmisión de la enfermedad  y la edad del paciente.**
+
+
+```{r,echo=FALSE, out.width='70%', out.height='30%',fig.align='center',fig.pos='H'}
+ggplot(data=Aids3, aes(x=Aids3$C_Transmision, y=Aids3$Edad, fill=Aids3$C_Transmision)) + 
+    geom_boxplot()+
+    xlab("Estado del paciente por Categoría de transmisión") + 
+    ylab("Edad al momento del diagnóstico") + 
+    ggtitle("Estado por Transmision del Paciente ")+
+    theme (text = element_text(size=12))+
+    labs(fill = "Estados del Paciente ")+
+    theme_minimal()
+
+```
+>  Como se observa en el boxplot, visualizamos diferentes grupos de transmisión en referente a su edad, y en varias categorías tienen valores atípicos ya sea en het, tiene un valor fuera de rango, en categoría hs que tiene varios valores inusuales después de los 60 años, en categoría id, hay un valor fuera de rango y en other que tiene un valor atípico a los 78 años. Claramente se observa que los pacientes por transmisión blood, están en la edad de 31 a 59 años, entre primer y tercer cuartil la mayoría de los datos, teniendo una media a los 43 años, no presentando valores que sobresalen de sus márgenes, de esta forma podemos interpretar los siguientes grupos de transmisión.
+
+
+**c) Relación entre tiempo sobreviviencia y tiempo de vida en sobrevivencia**
+
+```{r, echo=FALSE}
+# se le creal el campo tiempo y se aprovecha de crear Estado de fallecidos del campo muerto.
+Aids3<- mutate(Aids3,Muerto = Estado == "D", Tiempo = as.numeric(F_Muerte - F_Diagnostico))
+
+```
+
+```{r, echo=FALSE}
+
+plotrel<-ggplot(data = Aids3,  aes(x=Edad , y=Tiempo , group = C_Transmision)) +
+  geom_point(aes( color=C_Transmision)) +
+  facet_wrap(~C_Transmision) +   
+  coord_cartesian(xlim=c(0,90),ylim = c(0, 2500)) + 
+  scale_y_continuous(breaks = c(0,500,1000,1500,2000,2500)) + 
+  scale_x_continuous(breaks = c(0,15,30,45,60,75,90)) + 
+  labs( x = "Edad al momento del diagnóstico", y = "Tiempo de vida", title ="Relación entre tiempo de vida y edad del paciente", subtitle = "Por Categoría de Transmisión", caption = "Relación entre fecha diagnóstico, hasta la fecha de muerte del paciente, agrupado por categoría de transmisión")
+plotrel + theme(axis.title = element_text(size = 14), 
+    axis.text.x = element_text(size = 8), 
+    plot.title = element_text(family = "Bookman", 
+        colour = "black"), legend.title = element_text(colour = "darkblue"), 
+    legend.position = "bottom", legend.direction = "horizontal")
+
+```
+
+> Gráfico de densidad por puntos, interpretándolo como sigue: gráfico de transmisión de la enfermedad por periodo de vida del paciente desde la fecha del diagnóstico hasta la fecha de término del proceso, indica que en el conjunto de cada recuadro hay una concentración de pacientes por edad en sus tiempo de vida, por ende, tomamos de ejemplo het, que tiene pacientes desde 18 años hasta los 74 años la mayoría ha vivido los mil días como promedio, el máximo día hay un paciente que tiene al menos 28 años que ha estado con 2000 días de tiempo de vida.
+
+\pagebreak
+
+**Medidas Estadísticas de tendencia central de los atributos Edad y Tiempo**
+
+```{r, echo=FALSE}
+# función que calcúla la moda
+Mode <- function(x) {
+ux <- unique(x)
+ux[which.max(tabulate(match(x, ux)))]
+}
+# tabla de consulta para edad y tiempo para sus cálculos medidas estadísticas.
+MedEst<- Aids3 %>% 
+  summarise(Atributo=c("Edad","Tiempo"), # aplica sumario para registrar las medidas estadísticas
+            Media=c(mean(Edad),mean(Tiempo)), # mean cálcula la media
+            Mediana= c(median(Edad),median(Tiempo)), # cálcula ma mediana
+            Desv_SD= c(sd(Edad),sd(Tiempo)), # cálcula la desviación standard
+            Q1= c(quantile(Edad, .25),quantile(Tiempo, .25)), # cuartil 1
+            Q2= c(quantile(Edad, .50),quantile(Tiempo, .50)), # cuartil 2
+            Q3= c(quantile(Edad, .75),quantile(Tiempo, .75)), # cuartil 3
+            Moda= c(Mode(Edad),Mode(Tiempo)), # Aplicando la moda por la función externa
+            Min= c(min(Edad),min(Tiempo)), # obteniendo el mínimo de valor
+            Max= c(max(Edad),max(Tiempo)), # obteniendo el máximo de valor
+            contar=n() # cuenta los valores 
+            )
+
+knitr::kable(MedEst) # pasamos la variable MedEst para presentar la tabla
+
+```
+
+
+
+
+
+
+**Medidas estadística Inferencial del campo C_Transmision(categoría de transmisión) por sus subcategorías**
+
+> Aunque las medidas se pueden formular en el uso de los gráficos se deja la tablas de medidas estadísticas.
+
+**Categoría C_transmision por atributo edad**
+```{r, echo=FALSE}
+Tabla5 <- Aids3 %>% group_by(C_Transmision) %>% summarise(Total=n(),
+                                                                 Age_Media=mean(Edad),  # función que cálcula la media
+                                                                 sd_Age=sd(Edad), # función que cálcula la desviación
+                                                                 se_Age=sd_Age/sqrt(Total), # desviación tipica
+                                                                 upper_limit=Age_Media+se_Age, # cálculos de los límites
+                                                                 lower_limit=Age_Media-se_Age) %>%   
+dplyr::mutate(Porcentaje = round(Total/sum(Total)*100, 1) ) # mutate realiza cambios en la tabla entregando un campo porcentaje
+knitr::kable(Tabla5) # se crea la tabla con las medidas de estadísticas 
+
+
+```
+
+```{r,echo=FALSE, out.width='70%', out.height='30%',fig.align='center',fig.pos='H'}
+ggplot(Tabla5, aes(x=C_Transmision, y=Age_Media, fill=C_Transmision)) +
+  geom_bar(position=position_dodge(), stat="identity",
+           colour='black') +
+  ggtitle("Transmision del Paciente Edad Media ")+
+  geom_errorbar(aes(ymin=Age_Media-sd_Age, ymax=Age_Media+sd_Age), width=.2)
+```
+
+
+**Categoría C_transmison por atributo Tiempo de vida**
+```{r, echo=FALSE}
+Tabla6 <- Aids3 %>% group_by(C_Transmision) %>% summarise(Total=n(),
+                                                                 Tiempo_Media=mean(Tiempo),  # cálcula la media
+                                                                 sd_Tiempo=sd(Tiempo),  # cálcula la desviación
+                                                                 se_Tiempo=sd_Tiempo/sqrt(Total),  # desviación típica
+                                                                 upper_limit=Tiempo_Media+se_Tiempo, # limite superior
+                                                                 lower_limit=Tiempo_Media-se_Tiempo) %>%   # limite inferior
+dplyr::mutate(Porcentaje = round(Total/sum(Total)*100, 1) ) # mutate realiza cambios en la tabla entregando un campo porcentaje
+knitr::kable(Tabla6)
+
+
+```
+
+
+```{r,echo=FALSE, out.width='70%', out.height='30%',fig.align='center',fig.pos='H'}
+ggplot(Tabla6, aes(x=C_Transmision, y=Tiempo_Media, fill=C_Transmision)) +
+  geom_bar(position=position_dodge(), stat="identity",
+           colour='black') +
+  ggtitle("Transmision del Paciente Por Tiempo de vida ")+
+  geom_errorbar(aes(ymin=Tiempo_Media-sd_Tiempo, ymax=Tiempo_Media+sd_Tiempo), width=.2)
+```
+
+\
+\
+\
+
+**Presentación de la dataset Aids4 convirtiendo la fecha en código de fecha con as.numeric**
+
+> Se modifica la tabla a medida que la pudiese ocupar paras responder las preguntas, por ende, se van guardando en una nueva variable u objeto de tabla dataframe. 
+
+```{r, echo=FALSE}
+# Proceso de transformación de datos en sus atributos tranformamos los campos fechas por campos numéricos para proceso de la información
+Aids4<-data.frame(E_Origen=Aids3$E_Origen,Sexo=Aids3$Sexo,F_Diagnostico=as.numeric(Aids3$F_Diagnostico),
+                F_Muerte=as.numeric(Aids3$F_Muerte),Estado=Aids3$Estado,C_Transmision=Aids3$C_Transmision,
+                Edad=as.integer(Aids3$Edad))
+
+knitr::kable(head(Aids4,5))
+```
+: Tabla que muestra el proceso de transformación, para manipulación de datos, de uso general.
+
+
+
+**3.	¿Cuántos pacientes del estado NSW tienen VIH?**
+
+```{r, echo=FALSE}
+cpmsw1<-Aids4 %>% filter(E_Origen == 'NSW') 
+    #summarise(count=n()) # son 1780 pacientes con VIH
+cpmsw1<-tibble(cpmsw1)
+knitr::kable(head(cpmsw1,10))
+
+
+cat(" El total pacientes del estado NSW tienen VIH son: ")
+cpmsw2<-Aids4 %>% filter(E_Origen == 'NSW') %>% 
+    summarise(count=n())
+cpmsw2
+```
+
+
+**4.	¿Cuántos pacientes del estado QLD y del sexo masculino han muerto por VIH?**
+
+```{r, echo=FALSE}
+cpqld<-Aids4 %>% group_by(Estado) %>% 
+  filter(E_Origen=='QLD' & Sexo=='M' & Estado=='D') 
+  
+#cpqld<-tibble(cpqld)
+knitr::kable(head(cpqld,6))
+
+```
+: Tabla que muestra la consulta para mostrar su contabilización.
+
+```{r,echo=FALSE}
+cat("El total de pacientes del estado QLD y del sexo masculino han muerto por VIH son: ")
+cpqld2<-Aids4 %>% filter(E_Origen=='QLD' & Sexo=='M' & Estado=='D') %>%  
+  summarise(count=n()) 
+cpqld2
+
+```
+
+
+**5.	¿Cuántos pacientes que son de VIC, del sexo femenino no están en el rango de edades entre 35 y 50 años?**
+
+```{r, echo=FALSE}
+pcvic<-Aids4 %>% filter(E_Origen=='VIC', Sexo=='F',Edad<=35 | Edad >=50) %>% dplyr::select(E_Origen,Sexo,Edad) 
+pcvic<-tibble(pcvic)
+knitr::kable(head(pcvic,11))
+
+```
+: Tabla que muestra el grupo de pacientes vic que no cumplen la condición.
+
+```{r, echo=FALSE}
+cat("Sexo femenino VIC que no están en el rango de edades entre 35 y 50 años son:")
+pcvic1<-Aids4 %>%  filter(E_Origen=='VIC', Sexo=='F', Edad<=35 | Edad >=50) %>% 
+  summarise(count=n())
+pcvic1
+```
+
+
+**6.	¿Cuántos pacientes han muerto por VIH después del año 1982?**
+
+
+
+```{r, echo=FALSE}
+
+# Proceso de transformación de datos en sus atributos.
+Aids5<-data.frame(E_Origen=Aids3$E_Origen,Sexo=Aids3$Sexo,F_Diagnostico=as.numeric(format(Aids3$F_Diagnostico,'%Y')),
+                F_Muerte=as.numeric(format(Aids3$F_Muerte, '%Y')),Estado=Aids3$Estado,C_Transmision=Aids3$C_Transmision,
+                Edad=as.integer(Aids3$Edad))
+
+cpdvih<-Aids5 %>% filter(F_Muerte >1982 & Estado=='D') %>% dplyr::select(E_Origen,F_Muerte,Estado,Edad)
+
+knitr::kable(head(cpdvih,7))
+
+```
+: Tabla que muestra sólo su año en los campos fechas, obteniendo la consulta por año.
+
+```{r, echo=FALSE}
+cat("Los pacientes con fecha de muerte > a 1892 fueron un total de:")
+cpdvih1<-Aids5 %>% filter(F_Muerte >1982 & Estado=='D') %>% 
+  summarise(count=n())
+cpdvih1
+
+
+```
+
+
+**7.	Cree una variable que mida el número de días que trascurren entre el día que fue diagnosticado y la fecha de muerte o del fin de la observación del paciente.**
+
+Proceso de transformación de datos en sus atributos, en este caso se crea la variable Tiempo que contendrá la fecha de muerte restando la fecha de diagnóstico.
+
+```{r, echo=FALSE}
+# se le creal el campo tiempo y se aprovecha de crear Estado de fallecidos del campo muerto.
+Aids3<- mutate(Aids3,Muerto = Estado == "D", Tiempo = F_Muerte - F_Diagnostico)
+
+```
+
+```{r, echo=FALSE}
+
+# Proceso de transformación de datos en sus atributos.
+Aids6<-data.frame(E_Origen=Aids3$E_Origen,Sexo=Aids3$Sexo,F_Diagnostico=as.numeric(format(Aids3$F_Diagnostico,'%Y')),
+                F_Muerte=as.numeric(format(Aids3$F_Muerte, '%Y')),Estado=Aids3$Estado,C_Transmision=Aids3$C_Transmision,
+                Edad=as.integer(Aids3$Edad),Muerto=as.character(Aids3$Muerto), Tiempo=as.integer(Aids3$Tiempo))
+
+tablatib<-tibble(Aids6) # la tabla se convierte en una tabla tibble
+knitr::kable(head(tablatib,6)) # convertimos la tabla en una presentación de las 10 primeras filas.
+
+```
+: La variable se llama tiempo y es creada para consultar desde el tiempo de cuando se realiza el diagnóstico hasta la fecha termino del proceso en dias.
+
+**8.	¿Cuál es el paciente que menos tiempo estuvo diagnosticado antes de su fecha de muerte o del fin de la observación?**
+
+```{r, echo=FALSE}
+
+pcmtdm<-Aids6 %>% group_by(E_Origen)  %>% 
+  filter(Tiempo == min(Tiempo)) %>% 
+  summarise(minimoTiempo=min(Tiempo), count=n())
+
+knitr::kable(pcmtdm)
+
+cat("Los pacientes antes de su fecha de muerte o del fin de la observación fueron: ")
+pcmtdm2<-Aids6 %>% dplyr::select(Tiempo)  %>% 
+  filter(Tiempo == min(Tiempo)) %>% 
+  summarise(minimoTiempo=min(Tiempo), count=n())
+pcmtdm2
+```
+
+
+
+**9.	De los pacientes diagnosticados después de 1986, ¿Cuántos son menores de 35 años?**
+
+```{r, echo=FALSE}
+pcdcsm<- Aids6 %>% filter(F_Diagnostico >=1986, Edad < 35)
+pcdcsm<-tibble(pcdcsm)
+knitr::kable(head(pcdcsm,8))
+#cat("pacientes diagnosticados después de 1986 , ¿Cuántos son menores de 35 años?, en total son:")
+pcdcsm1<- Aids6 %>% filter(F_Diagnostico >1986, Edad < 35) %>% 
+  summarise(count=n())
+pcdcsm1
+```
+
+> Si nos referimos a mayor o igual obtenemos el resultado anterior, que en el año 1986 tiene meses y días, pero si nos referimos a mayor del año 1986, no obtenemos datos, por la sencilla razón, que, si vemos el resumen estadístico, se observa que la fecha máxima lo encontramos en F_Diagnostico (Max. :1986-06-15) y 	F_Muerte (Max. :1986-06-16), por ende, los resultados de encontrar personas después de 1986 no se encuentra registros, menos menores de 35 años.
+
+**10.	De los pacientes del género femenino, ¿Cuántas fueron contagiadas por sangre?**
+
+```{r, echo=FALSE}
+pcgfcb<-Aids6 %>% filter(Sexo=='F', C_Transmision=='blood')
+pcgfcb<-tibble(pcgfcb)
+
+knitr::kable(head(pcgfcb, 8))
+
+cat("Contagiados por sangre fueron de un total de:")
+pcgfcb<-Aids6 %>% filter(Sexo=='F', C_Transmision=='blood') %>% 
+  summarise(count=n())
+pcgfcb
+
+```
+
+
+
+**11.	Clasifique y cuente el número de pacientes contagiados por transmisión que no sea por sangre.** 
+
+```{r, echo=FALSE}
+ftra<-Aids6 %>% 
+  dplyr::select(C_Transmision ) %>%  # selecciona el campo por C_Transmision 
+  group_by(C_Transmision ) %>%  # agrupa por una o más variable C_Transmision 
+  filter(C_Transmision !='blood') %>%  # obtiene datos por filtros C_Transmision 
+  summarise(n=n()) %>% # realiza una operacion por cada grupo en menos filas
+  arrange(n) # ordena las filas según los valores de una o más columnas
+knitr::kable(ftra)
+
+```
+: tabla que agrupa por el campo C_Transmision y lo filtra por C_Transmision !='blood'. 
+
+
+
+**12.	Indique la edad promedio y número de pacientes, por género, que fueron contagiados después del año 1980.**
+
+```{r, echo=FALSE}
+pcepnpcf<-Aids6 %>% group_by(Sexo) %>% 
+  filter(F_Diagnostico>1980) %>% 
+  summarise(Edad_Media=mean(Edad), count=n())
+
+
+knitr::kable(pcepnpcf)
+```
+: tabla que promedia el campo edad por intermedio de sumario, obteniendo una edad para los dos generos F y M iguales a 37 años de edad media
+
+
+# 7.- Conclusión.
+
+<p align="justify">Se realizó un proceso de estudio con la dataset de pacientes enfermos con VIH, contestando una serie de interrogantes de cómo eran sus campos, como estaban constituidos la información, como se procesó a los pacientes enfermos, también se verificó el tiempo de vida de los pacientes que estuvieron internados o no lo estuvieron, si llegaron o no muriendo, además, se realizó una estadística para observar las muestras y poder concluir si la información contenida es o no un dato existente, habiéndose cumplido nuestros objetivos mencionados en la introducción del informe, se realizó utilizando las herramientas mencionadas con anterioridad, por lo que se puede deducir que tenemos muchas y múltiples opciones de llegar a un resultado, utilizando diferentes códigos y consultas.</p>
+
+
+

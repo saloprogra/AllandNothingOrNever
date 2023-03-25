@@ -1,0 +1,421 @@
+---
+title: "Trabajo de Presentación"
+subtitle: $"Caso\ estudio$ $'NETFLIX'"$
+author: "Salomón Salinas"
+date: "2022-10-02"
+output: pdf_document
+---
+
+```{r setup, include=FALSE} 
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+```
+
+# Temas a Presentar.
+
+
+**1.- Introducción.**\
+**2.- Instalación de Librerías**\
+**3.- Antecedentes.**\
+**4.- Cargando la datasets** $Netflix$\
+**5.- Resumen Analítico.**\
+**6.- Resumen Gráfico**\
+**7.- Conclusión.**
+
+# 1.- Introducción.
+
+<p align="justify">Este documento es una de el estudio de netflix es una base de datos(datasets) que contiene 9 campos con diferentes tipos de atributos que se han convertido para trabajar en el presente informe, como muestra de presentar una exploración y visualización de los datos contenidos, para ello veremos un R-Markdown de forma estructurada para la realización, a través, de cada una de los apartados declarados en cada punto.</p>
+
+# 2.- Instalación de Librerías
+
+<p align="justify">Para el presente informe se realizó la instalación de las librerías por intermedio del programa RSTUDIO, no se utilizó la instalación por código $intall.packages()$, para lo cuál se hace la llamada de la librería por $library().$</p>
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+rm(list = ls()) # limpiamos los parametros antes de iniciar dentro del entorno
+#install.packages("installr", dependencies = TRUE)
+#library(installr)
+#updateR()
+#library(ggplot2)
+#library(tidyverse)
+library(kableExtra) #El objetivo de kableExtra es construir tablas complejas y manipular estilos de tablas.
+library(dplyr) # para trabajos consultas operador pipe etc.
+library(stringr) # libreria para trabajar con cadenas de string
+library(knitr)
+library(DataExplorer) # debe instalar data explorer install.packages("DataExplorer")
+library(readr) # libreria que sirve para conectar la dataset .csv
+
+
+```
+
+Se realiza la conección de la dataset n_movies.csv para empezar explorar.
+
+**damovi \<- read_csv("n_movies.csv",show_col_types = FALSE)**
+
+```{r, echo=FALSE}
+
+damovi <- read_csv("n_movies.csv",show_col_types = FALSE)
+
+
+```
+
+# 3.- Antecedentes.
+
+<p align="justify">En esta se presenta una dataset llamada <b>Netflix</b> con 9957 campos con 9 columnas("title","year", "certificate","duration","genre","rating","description","stars","votes"), con dos campos numéricos (rating y votes),lo cual hay con valores nulos, y unos campos con niveles categóricos con categoría dentro del campo mismo.</p>
+
+| Atributo    | Tipo               | Observación                                                          |
+|------------|--------------|----------------------------------------------|
+| title       | chr                | nombre de la pelicula, campo caracter                                |
+| year        | chr                | año es un caracter ya que contiene guión medio como rango             |
+| certificate | chr (cualitativa)  | tipo cualitativa nominal                                             |
+| duration    | chr                | es una caracter que debiera ser un numérico                          |
+| genre       | chr (cualitativa)  | tipo cualitativa nominal                                             |
+| rating      | num (continua)     | continuo por sus valores decimales, indica rating de visualizaciones |
+| description | chr                | es un campo caracter que indica informacíón                          |
+| stars       | chr                | actores que actuan en la pelicula                                    |
+| votes       | num (discreta)     | votos que han dado por las peliculas                                 |
+
+: Característica de la Dataset Netflix
+
+
+**Visualizamos la dataset netflix con sus información primera parte**
+
+```{r, echo=FALSE}
+damovi2<-damovi[, c("title","description", "stars")]
+head(damovi2,2) %>% kable(booktabs = TRUE,format = "latex", caption = "\\label{tabla02}Visualización de la dataset Netflix") %>% kable_styling( latex_options = c("striped", "condensed","hold_position"), position = "center", full_width = TRUE)
+```
+
+**Visualizamos la dataset netflix con sus información segunda parte**
+
+```{r , echo=FALSE}
+damovi3<-damovi[, c("year","certificate","duration","genre","rating","votes")]
+head(damovi3,3) %>% 
+  kable(booktabs = TRUE,format = "latex", caption = "\\label{tabla02.1}Visualización de la dataset Netflix 2.1") %>% 
+  kable_styling( latex_options = c("striped", "condensed","hold_position","scale_down"), position="left")
+
+```
+
+# 4.- Cargando la Dataset Netflix
+
+<p align="justify">Veo que en realidad voy explorar sólo los datos principales como el título, año,canal, duración en minutos, genero y votos, pero actores y descripción por el momento no se van a solicitar, ya que se presentará información de otra indole para ellos procedo a eliminar las columnas que no ocuparé, para ellos se basará en la dataset, ya trabajada con anterioridad.</p>
+
+```{r, echo=FALSE}
+damovi2 <- read_csv("datamovi.csv",show_col_types = FALSE)
+damovi2<- data.frame(damovi2)
+datamov<- damovi2[,c(2,3,4,5,6,7,8)] # se eliminó la columna descripción y actores
+```
+
+```{r, echo =FALSE}
+head(datamov,3) %>% 
+  kable(booktabs = TRUE,format = "latex", caption = "\\label{tabla3}Presentación Visual de la Dataset a trabajar en sus atributos") %>% 
+  kable_styling( latex_options = c("striped", "condensed","hold_position","scale_down"), position="left")
+```
+
+# 5.- Resumen Analítico.
+
+<p align="justify">Para realizar el resumen se realizará una pequeña exploración de los datos para lo cual, también se realizará unas consultas a la datasets, se realizará un resumen estadísticos etc.</p>
+
+## 5.1.- Los atributos de la tabla datamov
+
+Se presenta los campos para lo cuál se trabajará
+
+```{r, echo=FALSE}
+names(datamov)
+```
+
+## 5.1.- Dimension de la tabla datamov
+
+Dimension de ta tabla datamov por filas por columnas
+
+```{r, echo=FALSE}
+dim(datamov)
+```
+
+## 5.2.- Estructura de la tabla datamov con la función str()
+
+```{r, echo=FALSE}
+str1<-str(datamov)
+```
+
+## 5.3.- Head de la tabla datamov con 4 primeras filas función head()
+
+```{r, echo=FALSE}
+head(datamov,4) %>% 
+  kable(booktabs = TRUE,format = "latex", caption = "\\label{tabla4}Presentación Visual de la Dataset datamov 4 primeras filas") %>% 
+  kable_styling( latex_options = c("striped", "condensed","hold_position","scale_down"), position="left")
+#head(datamov, 4) # visualizamos el dataframe de las 4 primeras filas
+```
+
+## 5.4.- Tail de la tabla datamov con las últimas 4 filas
+
+```{r, echo=FALSE}
+tail(datamov,4) %>% 
+  kable(booktabs = TRUE,format = "latex", caption = "\\label{tabla5}Presentación Visual de la Dataset datamov con sus 4 ultimas filas") %>% 
+  kable_styling( latex_options = c("striped", "condensed","hold_position","scale_down"), position="left")
+#tail(datamov, 4) # visualizamos el dataframe de las 4 ultimas filas
+```
+
+## 5.5.- Usando la tabla apply para visualizar si hay datos faltantes
+
+```{r, echo=FALSE}
+## usando la tabla apply, cuya funcion se le pasa tres parametros para que sumen los valores faltantes
+apply(X = is.na(datamov), MARGIN = 2, FUN = sum)
+```
+
+
+
+## 5.6.- Summary de la tabla datamov en un resumen estadístico
+
+```{r, echo=FALSE}
+summary(datamov) # visualizamos el dataframe de las 4 ultimas filas
+
+```
+**Observación:**
+
+<p align="justify">Nos permite ver los tipos de datos que dejamos en la dataset, pero también, ver como van las medianas respecto a su media, como rating que tiene coincidencia en su media y mediana lo que indica que es simetro y uniforme, ademas, vemos los votos que tiene una mediana extremadamente baja y una media bastante alta, lo que indica que es una variable desigual no uniforme con altos valores dispersos pero con un conjunto que se aglomera en el segundo y tercer cuarto, en dura minutos que tiene una mediana mas apegada a la media lo que indica una variación en sus datos pero que es mas uniforme etc.</>
+
+**Observación2**
+
+0.- De la columna título de dejó para ver a que película correcponde el genero. es de tipo caracter
+
+1.- De la columna rating columna numérica nos indica que su distribución es homogenea, ya que se acerca la media y mediana al mismo centro.La mayor parte se concetra del segundo y tercer cuartil con valores muy alejados primer cuartil y alejados en el cuarto.
+
+2.- De la columna voto variable numérica que no es uniforme esta muy concetrado en la parte superior, tiene muchos datos atipicos.
+
+3.- De la columna certificado que es una variable factor que posee niveles
+
+4.- De la columna genberos es una variable factor ya que posee niveles
+
+5.- De la columna dura_minutos es bastante uniforme, de igual forma en la contracion esta en la parte superior y tenemos algunos outlier.
+
+6.- Se estableció como una variable numérica para realizar búsquedas y agrupaciones.
+
+
+## 5.7.- Summarisando en datamov para ver cuantos datos unicos existen en cada columna
+
+```{r, echo=FALSE}
+
+datamov %>% summarise_all(funs(n_distinct(.)))
+```
+
+
+
+
+
+
+## 5.8.- Realizando una consultas a datasets Min y Max
+
+**consultando por los mínimos y máximos dentro de la dataset y alojando los datos en una variable
+minmax, buscando los valores mínimos y máximos**
+
+```{r, echo=FALSE}
+minmax<-datamov[datamov$votos==max(datamov$votos) | datamov$votos==min(datamov$votos),]
+head(minmax,4) %>% 
+  kable(booktabs = TRUE,format = "latex", caption = "\\label{tabla6}Representación de una tabla con el Mínimo y Máximo") %>% 
+  kable_styling( latex_options = c("striped", "condensed","hold_position","scale_down"), position="left")
+
+ 
+```
+
+## 5.9.- **consultado y filtrando el rating dentro del año 2019, dejando los resultados en
+una variable ra **
+
+```{r, echo=FALSE}
+
+ra<-datamov[datamov$rating >=6.900 & datamov$anios == 2019, c('rating','anios')]
+head(ra,5)
+  
+```
+
+## 5.10.- Calculando algunas medidas  con funciones en analisis estadístico
+
+**Cálculo de moda, media, mediana, desviación standard, coeficiente de variación que se puede aplicar a cualquier tabla en R base.**
+
+```{r}
+# funciones a tomar en cuenta moda, valor o valores que mas se repiten
+moda <- function(x){
+  unico <- unique(x)
+  unico[which.max(tabulate(match(x, unico)))]
+  
+}
+moda(datamov$rating)
+# en este caso se le indico que buscar en rating la moda lo cual arrojo 6764
+
+# funciones a tomar en cuenta media
+media<-function(x){
+  sum(x)/length(x)
+}
+media(datamov$rating)
+
+# funciones a tomar en cuenta media
+median(datamov$rating)
+# funciones a tomar en cuenta el min
+min(datamov$rating)
+max(datamov$rating)
+
+#Algunas medidas de dispersión com desviacion standard
+sigma<- function(x){
+  n <- length(x)
+  desvi <- sqrt(sum((x-mean(x))^2)/n)
+  return(desvi)
+}
+sigma(datamov$rating)
+
+#Algunas medidas de dispersión con desviacion standard
+coef_var<- function(x, na.ram = FALSE){
+  sd(x, na.rm = na.ram) / mean(x, na.ram=na.ram)
+}
+sd(datamov$rating)
+```
+
+
+
+# 6.- Resumen Gráfico.
+
+## 6.1.- Resumen Gráfico de la Datasets donde nos muestra los campos y porcentajes si estan completos, faltan valores, si hay datos nulos o perdidos etc. 
+
+**Muestra las columnas dicretas o continuas valores perdidos si lo hubiere etc.**
+
+```{r, echo=FALSE}
+# plot para ver nuestra tabla como esta compuesta
+plot_intro(datamov)
+```
+## 6.2.- Resumen Gráfico de Valores Nulos
+
+**Muestra un plot de los valores perdidos y su porcentaje si lo hubiera por los atributos**
+
+```{r, echo=FALSE}
+# plot para ver nuestra tabla como esta compuesta
+# plot donde veremos los valores perdidos si existe o no
+plot_missing(datamov)
+```
+
+
+## 6.3.- Resumen Gráfico de Correlación, Histogramas, plot, barplot y boxplot, etc en r base 
+
+**Muestra un plot de correlación de las variables categóricas y su relación entre ellas, el color indica que fuerte es su relación en el cruce de sus campos**
+
+```{r, echo=FALSE}
+# correlación de las varibales numéricas 
+plot_correlation(datamov)
+
+```
+
+## 6.3.1.- Graficando histograma básico en comparativa haciendo 4 quiebres y comparado Sturge
+
+```{r, echo=FALSE}
+par(mfrow = c(1,2))
+hist(datamov$rating, breaks = "Sturge", plot=TRUE,main = "Histograma Rating Sturge",xlab = "Densidad", ylab = "Frecuencia")
+hist(datamov$rating, breaks = 4, main = "Histograma Rating 4 breaks",xlab = "Densidad", ylab = "Frecuencia")
+
+```
+**Observación**
+
+<p align="justify">Vemos un gráfico que esta confoirmado por la regla de sturge y por un parametro fijo breaks = 4, representada en un histograma nos muestra que sus datos estan mas uniforme en sus distribución, que su concentración esta entre 6 y 8 en densidad esto implica que su media y mediana está en esos puntos, permite ver sus valores fuera de rango muy separados del centro en primer 0 y 2 y como también 9 y 20.</p>
+
+## 6.3.2.- Presentación del conjunto de datos numéricos cuantitativos en su distribución y dispersión de sus datos 
+
+```{r, echo=FALSE}
+datamo <- datamov[,c("rating","votos","dura_minutos","anios")]
+pairs(datamo,       # Datos
+      pch = 19, # Símbolo pch
+      col = 4,  # Color
+      main = "Comparativa de Distribución campos Numéricos",    # Título
+      gap = 0,           # Distancia entre gráficos
+      row1attop = FALSE, # Dirección de la diagonal
+      labels = colnames(datamo), # Etiquetas
+      cex.labels = 0.8,  # Tamaño textos diagonales
+      font.labels = 1)   
+```
+Observación:
+
+<p align="justify">Se observa que la mayor parte de sus datos al inicio o al final, además, presenta datos dispersos, lo que podríamos apreciar datos fuera de rangos en sus 4 campos, rating, votos, dura_minutos, anios.</p>
+
+
+
+
+## 6.3.4.- Comparativa de una tabla de frecuencia en una representación gráfica de histograma
+
+```{r, echo=FALSE}
+par(mfrow = c(1,2))
+hist(datamov$rating, breaks = "Sturge", plot=TRUE,main = "Histograma Rating",xlab = "Densidad", ylab = "Frecuencia" )
+hist(datamov$rating, breaks = c(1.700, 2.600, 3.700,4.800,5.900,6.600, 7.700,8.800,9.900),main = "Histograma Rating 2",xlab = "Densidad", ylab = "Frecuencia" )
+tabla <- cut(datamov$rating, breaks = c(1.700, 2.600, 3.700,4.800,5.900,6.600, 7.700,8.800,9.900))
+tabla <- table(tabla)
+tabla
+```
+## 6.3.5.- Histograma que se usa la regla de Sturge y con una tabla de corte 
+
+```{r, echo=FALSE}
+hist(datamov$votos, breaks = "Sturge", plot=TRUE,main = "Histograma Votaciones",xlab = "Votaciones", ylab = "Frecuencia" )
+tabla1 <- cut(datamov$votos, breaks = c(300000, 600000, 900000,1200000,1500000,1800000,2100000))
+tabla1 <- table(tabla1)
+tabla1
+```
+
+##  6.3.6.- Comparando las dos tablas creadas con su eje de corte y representada en barplot
+
+```{r, echo=FALSE}
+par(mfrow = c(1,2))
+barplot(tabla)
+barplot(tabla1)
+```
+
+## 6.3.7.- Representación en barplot de rating y votos
+
+<p align="justify">verificamos la media respecto a su mediana si es uniforme en esta caso es muy uniforme en mayor porcentaje se 
+encuentra entre 6 y 8 en su rating pero también se ven muchos valores outlier por sobre su tercer cuartil y por bajo su primer cuartil</p>
+
+```{r, echo=FALSE}
+names(datamov)
+par(mfrow = c(1,2))
+boxplot(datamov$rating, col ="cyan",main="Rating")
+abline(h=mean(datamov$rating), col="red")
+boxplot(datamov$votos, col ="blue", main="Votos")
+abline(h=mean(datamov$votos), col="red")
+
+```
+Observación:
+
+1.- En rating tiene oulier por bajo de primer cuartil de 5 corte teniendo oulier por sobre el cuarto pero son menor, igualmente la mediana esta cera de la media por lo que se deduce que es simetrico.
+
+2.- En Votos tenemos datos muy dispersos anormales, con datos atipicos dispersos indica que concentración esta alredor de los 20000 y su mediana baja apegandose a la media por sobre ella.
+
+
+## 6.3.8.- Representación Grafica de distirbucion por barplot y boxplot de solo la variable votos
+
+```{r, echo=FALSE}
+
+par(mfrow = c(1,2))
+#datamov$votos
+boxplot(datamov$votos,col ="blue", main="Votos")
+abline(h=mean(datamov$votos), col="red")
+barplot(datamov$votos, col ="blue", main="Votos")
+
+```
+
+## 6.3.9.- Representación Gráfica de tabla de frecuencia y llevado a gráfico simple
+
+**Canalizando la frecuencia absoluta creada a traves de una tabla que contiene la frecuencia de rating y los representa en un barplot**
+
+```{r, echo=FALSE}
+
+mi_tabla <- table(datamov$rating)
+mi_tabla
+
+# Una fila, dos columnas
+par(mfrow = c(1, 2))
+# Gráfico de barras de frecuencia absoluta
+barplot(mi_tabla, main = "Frequencia absoluta",col = rainbow(3))
+# Gráfico de barras de frecuencia relativa
+barplot(prop.table(mi_tabla) * 100, main = "Frequencia relativa (%)",col = rainbow(3))
+
+
+```
+
+
+# 7.- Conclusión.
+
+<p align="justify">R es un programa que se puede utilizar multiples librerías para usar las conecciones para trabajar con herramientas y procesos, que permitan procesar funciones y facilitar el código para realizar las exploraciones de los datos, también para poder realizar análisis en dataframes, y graficar desplegables, como se ha podido realizar en el entregable.y obviamente tiene la facilidad de ocupar multiples de librerías externas para realizar los análisis de datos y creación de modelos etc.<p/>
+
+
+<p align="justify">Resumiendo en este informe se realizó una estructura ordenada por los contenidos tales como se conecta a la dataset, se muestra la tabla conectada, se procesa los campos y se indican de que tipo son, se realiza una exploracion simple para mostrar datos, tambien se realiza una pequeños resumenes estadísticos para observar como van conformados los dastos, luego se representa de forma gráfica lo que podríamos visualizar como resultados de las consultas y tablas rangos y frecuencias, etc</p>
+
