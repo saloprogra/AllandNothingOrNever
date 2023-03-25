@@ -1,0 +1,4 @@
+"0","Estudi2<-Estud[,c(""Financiacion"",""Acumulado"",""Gastos"",""Ingreso"",""Clases"",""Pandemia"")] #selección de campos"
+"0","head(Estudi2,3) %>% "
+"0","  kable(booktabs = TRUE,format = ""latex"", caption = ""\\label{tabla3}Presentación Segunda Mitad tabla Actual a Trabajar"") %>% "
+"0","  kable_styling( latex_options = c(""striped"", ""condensed"",""hold_position"",""scale_down""), position=""left"")"

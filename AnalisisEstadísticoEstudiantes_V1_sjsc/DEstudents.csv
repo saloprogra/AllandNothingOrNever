@@ -1,0 +1,401 @@
+"ID","Sexo","Edad","Fuma","Estatura","Colegio","Estrato","Financiacion","Acumulado","Gastos","Ingreso","Clases","Pandemia","Clases_virtuales","Estadistica","Inseguridad","vida_cotidiana","Puntaje"
+"SB11201910010435","Femenino",21,"No","Alta","Privado",1,"Beca",3.92,48,0.61,"Virtual","De acuerdo","Totalmente de acuerdo","Indeciso","De acuerdo","De acuerdo",81
+"SB11201910004475","Masculino",21,"Si","Baja","Privado",2,"Beca",3.96,72,2.07,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","En desacuerdo","De acuerdo","Totalmente en desacuerdo",78
+"SB11201910011427","Masculino",21,"Si","Alta","Privado",2,"Beca",3.85,85,0.84,"Virtual","De acuerdo","De acuerdo","En desacuerdo","Totalmente de acuerdo","De acuerdo",77
+"SB11201910041975","Masculino",18,"Si","Alta","Privado",2,"Beca",3.69,56,1.55,"Virtual","De acuerdo","De acuerdo","Totalmente en desacuerdo","Totalmente de acuerdo","De acuerdo",70
+"SB11201910013623","Femenino",17,"Si","Alta","Privado",1,"Beca",4.01,64,2.32,"Virtual","Ni de acuerdo, ni en desacuerdo","Totalmente de acuerdo","Indeciso","De acuerdo","Indeciso",68
+"SB11201910038122","Femenino",16,"No","Baja","Privado",2,"Beca",3.8,63,2.1,"Presencial","De acuerdo","De acuerdo","De acuerdo","Indeciso","De acuerdo",65
+"SB11201910037905","Femenino",19,"Si","Baja","Privado",1,"Beca",4.35,40,0.69,"Presencial","De acuerdo","En desacuerdo","Totalmente de acuerdo","De acuerdo","Totalmente de acuerdo",54
+"SB11201910038140","Femenino",19,"Si","Media","Privado",1,"Beca",3.76,65,2.18,"Virtual","De acuerdo","Totalmente de acuerdo","De acuerdo","Indeciso","Indeciso",50
+"SB11201910038005","Femenino",17,"Si","Media","Privado",2,"Beca",3.57,37,0.71,"Virtual","En desacuerdo","Totalmente en desacuerdo","Indeciso","De acuerdo","En desacuerdo",36
+"SB11201910037919","Masculino",20,"Si","Media","Privado",1,"Beca",3.15,63,2.1,"Presencial","De acuerdo","Totalmente en desacuerdo","Indeciso","De acuerdo","Indeciso",35
+"SB11201910038100","Femenino",21,"No","Media","Privado",1,"Beca",3.8,76,1.22,"Virtual","En desacuerdo","De acuerdo","Totalmente en desacuerdo","Indeciso","En desacuerdo",35
+"SB11201910038016","Femenino",17,"Si","Media","Privado",1,"Beca",3.09,50,1.75,"Presencial","De acuerdo","Totalmente de acuerdo","Indeciso","De acuerdo","Indeciso",34
+"SB11201910037882","Masculino",18,"Si","Media","Privado",2,"Beca",3.65,47,1.58,"Presencial","De acuerdo","Totalmente en desacuerdo","De acuerdo","Indeciso","Totalmente de acuerdo",30
+"SB11201910037986","Femenino",19,"Si","Media","Privado",1,"Beca",3.13,32,1.09,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","Indeciso","De acuerdo","De acuerdo",28
+"SB11201910038042","Masculino",20,"No","Media","Privado",1,"Beca",3.49,53,1.79,"Presencial","De acuerdo","Totalmente en desacuerdo","De acuerdo","En desacuerdo","En desacuerdo",28
+"SB11201910038080","Masculino",17,"No","Media","Privado",1,"Beca",2.91,42,1.4,"Virtual","De acuerdo","En desacuerdo","Indeciso","Indeciso","De acuerdo",28
+"SB11201910038156","Femenino",18,"No","Media","Privado",2,"Beca",3.09,43,1.17,"Presencial","De acuerdo","Totalmente en desacuerdo","Indeciso","De acuerdo","De acuerdo",28
+"SB11201910038060","Masculino",19,"No","Alta","Privado",1,"Beca",2.97,33,1.13,"Presencial","De acuerdo","De acuerdo","En desacuerdo","Totalmente de acuerdo","Indeciso",26
+"SB11201910038286","Masculino",25,"No","Media","Privado",2,"Beca",2.98,60,0.36,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","Totalmente de acuerdo","En desacuerdo","De acuerdo",26
+"SB11201910040310","Masculino",21,"Si","Media","Privado",1,"Beca",3.78,39,1.32,"Presencial","De acuerdo","En desacuerdo","De acuerdo","En desacuerdo","De acuerdo",25
+"SB11201910044292","Femenino",19,"No","Alta","Privado",1,"Beca",4.05,41,1.39,"Presencial","De acuerdo","De acuerdo","En desacuerdo","Totalmente de acuerdo","Indeciso",24
+"SB11201910040447","Femenino",21,"No","Media","Privado",1,"Beca",4.12,73,2.45,"Virtual","De acuerdo","En desacuerdo","Indeciso","En desacuerdo","De acuerdo",24
+"SB11201910038184","Femenino",21,"No","Baja","Privado",1,"Beca",4.14,70,0.53,"Presencial","De acuerdo","Totalmente de acuerdo","Indeciso","De acuerdo","De acuerdo",24
+"SB11201910040312","Masculino",20,"No","Baja","Privado",1,"Beca",3.54,58,1.95,"Presencial","De acuerdo","En desacuerdo","Indeciso","Indeciso","Indeciso",22
+"SB11201910038266","Femenino",16,"No","Media","Privado",1,"Beca",3.15,46,0.55,"Virtual","De acuerdo","Ni de acuerdo, ni en desacuerdo","Indeciso","De acuerdo","De acuerdo",20
+"SB11201910038217","Femenino",21,"No","Media","Privado",1,"Beca",4.65,44,1.57,"Presencial","De acuerdo","Totalmente en desacuerdo","Indeciso","Totalmente en desacuerdo","Totalmente en desacuerdo",20
+"SB11201910038310","Femenino",16,"No","Media","Privado",1,"Beca",4.07,59,0.99,"Presencial","De acuerdo","De acuerdo","De acuerdo","En desacuerdo","De acuerdo",19
+"SB11201910037009","Femenino",22,"Si","Media","Privado",1,"Beca",2.92,33,1.02,"Virtual","Ni de acuerdo, ni en desacuerdo","En desacuerdo","De acuerdo","Indeciso","Totalmente en desacuerdo",18
+"SB11201910036872","Masculino",18,"Si","Baja","Privado",1,"Beca",2.67,34,1.16,"Presencial","De acuerdo","En desacuerdo","De acuerdo","Totalmente de acuerdo","De acuerdo",18
+"SB11201910040576","Femenino",22,"Si","Baja","Privado",1,"Beca",4.1,44,1.49,"Presencial","De acuerdo","Totalmente en desacuerdo","De acuerdo","En desacuerdo","De acuerdo",17
+"SB11201910037487","Femenino",19,"Si","Alta","Privado",1,"Beca",2.91,66,1.22,"Presencial","Ni de acuerdo, ni en desacuerdo","En desacuerdo","Indeciso","Totalmente de acuerdo","De acuerdo",17
+"SB11201910042901","Masculino",22,"Si","Media","Privado",1,"Beca",3.7,31,1.06,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","Indeciso","De acuerdo","Indeciso",12
+"SB11201910036704","Femenino",21,"Si","Media","Privado",1,"Beca",4.34,53,0.78,"Presencial","De acuerdo","De acuerdo","Totalmente de acuerdo","En desacuerdo","Totalmente de acuerdo",10
+"SB11201910036941","Masculino",17,"Si","Baja","Privado",1,"Beca",2.82,65,2.2,"Virtual","De acuerdo","De acuerdo","De acuerdo","De acuerdo","Indeciso",10
+"SB11201910036898","Femenino",19,"Si","Media","Privado",1,"Beca",2.94,35,1.18,"Presencial","De acuerdo","Totalmente en desacuerdo","Indeciso","De acuerdo","Indeciso",9
+"SB11201910038516","Masculino",18,"No","Alta","Privado",1,"Beca",3.64,39,1.09,"Presencial","En desacuerdo","Ni de acuerdo, ni en desacuerdo","Indeciso","En desacuerdo","De acuerdo",9
+"SB11201910036930","Femenino",28,"Si","Alta","Privado",3,"Beca",4.33,80,2.76,"Presencial","De acuerdo","En desacuerdo","En desacuerdo","Totalmente de acuerdo","De acuerdo",10
+"SB11201910037000","Femenino",21,"Si","Alta","Privado",1,"Beca",4.28,79,2.65,"Presencial","De acuerdo","De acuerdo","De acuerdo","Indeciso","Totalmente de acuerdo",12
+"SB11201910036683","Masculino",19,"Si","Alta","Privado",1,"Beca",4.07,57,0.93,"Presencial","De acuerdo","De acuerdo","De acuerdo","De acuerdo","De acuerdo",14
+"SB11201910037198","Femenino",17,"Si","Media","Privado",2,"Beca",3.18,74,2.27,"Presencial","De acuerdo","En desacuerdo","En desacuerdo","De acuerdo","De acuerdo",18
+"SB11201910038551","Masculino",18,"Si","Media","Privado",1,"Beca",3.45,46,1.56,"Presencial","De acuerdo","Totalmente de acuerdo","De acuerdo","Totalmente de acuerdo","De acuerdo",16
+"SB11201910040563","Femenino",16,"Si","Media","Privado",1,"Beca",3.86,70,2.03,"Virtual","De acuerdo","Ni de acuerdo, ni en desacuerdo","Indeciso","De acuerdo","Totalmente de acuerdo",32
+"SB11201910037871","Masculino",20,"Si","Media","Privado",2,"Beca",3.7,38,1.28,"Presencial","De acuerdo","De acuerdo","En desacuerdo","Indeciso","En desacuerdo",77
+"SB11201910037211","Femenino",18,"Si","Media","Privado",3,"Beca",4.91,36,1.22,"Presencial","De acuerdo","En desacuerdo","De acuerdo","Indeciso","Indeciso",72
+"SB11201910036756","Femenino",20,"Si","Baja","Privado",1,"Beca",3.53,46,1.55,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","Indeciso","De acuerdo","De acuerdo",60
+"SB11201910037284","Femenino",17,"Si","Baja","Privado",2,"Beca",4.3,73,2.1,"Virtual","De acuerdo","De acuerdo","De acuerdo","De acuerdo","De acuerdo",69
+"SB11201910040552","Femenino",18,"Si","Media","Privado",1,"Beca",3.62,44,1.49,"Presencial","De acuerdo","Totalmente en desacuerdo","En desacuerdo","Indeciso","De acuerdo",65
+"SB11201910040585","Masculino",20,"Si","Baja","Privado",3,"Beca",4.08,52,0.92,"Virtual","Ni de acuerdo, ni en desacuerdo","Totalmente en desacuerdo","Totalmente de acuerdo","De acuerdo","De acuerdo",54
+"SB11201910042854","Masculino",19,"Si","Baja","Privado",3,"Beca",4.16,81,0.7,"Presencial","De acuerdo","Totalmente en desacuerdo","Indeciso","De acuerdo","En desacuerdo",52
+"SB11201910037236","Masculino",17,"Si","Baja","Privado",2,"Beca",4.18,57,1.91,"Virtual","De acuerdo","En desacuerdo","De acuerdo","En desacuerdo","Indeciso",36
+"SB11201910042910","Masculino",18,"No","Alta","Privado",1,"Beca",4.8,35,1.18,"Presencial","De acuerdo","De acuerdo","Indeciso","De acuerdo","Totalmente de acuerdo",35
+"SB11201910036984","Femenino",17,"Si","Media","Privado",1,"Beca",3.73,48,0.61,"Presencial","De acuerdo","Totalmente de acuerdo","De acuerdo","En desacuerdo","En desacuerdo",35
+"SB11201910036719","Masculino",19,"Si","Media","Privado",1,"Beca",3.62,39,1.32,"Presencial","De acuerdo","En desacuerdo","De acuerdo","De acuerdo","De acuerdo",34
+"SB11201910040613","Femenino",18,"Si","Baja","Privado",2,"Beca",3.51,32,1.07,"Presencial","De acuerdo","De acuerdo","Indeciso","De acuerdo","De acuerdo",32
+"SB11201910037250","Femenino",22,"Si","Alta","Privado",1,"Beca",4.15,42,1.41,"Virtual","De acuerdo","En desacuerdo","Totalmente en desacuerdo","En desacuerdo","Indeciso",28
+"SB11201910038501","Femenino",18,"Si","Baja","Privado",1,"Beca",3.71,25,1.06,"Virtual","De acuerdo","Ni de acuerdo, ni en desacuerdo","Indeciso","De acuerdo","De acuerdo",28
+"SB11201910045994","Femenino",17,"Si","Media","Privado",2,"Beca",3.57,45,1.52,"Virtual","De acuerdo","Ni de acuerdo, ni en desacuerdo","Indeciso","De acuerdo","Indeciso",28
+"SB11201910045983","Femenino",16,"Si","Baja","Privado",2,"Beca",4.72,53,0.78,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","De acuerdo","En desacuerdo","Indeciso",28
+"SB11201910046075","Masculino",20,"Si","Media","Privado",2,"Beca",3.82,34,1.15,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","De acuerdo","Indeciso","Totalmente de acuerdo",26
+"SB11201910046027","Masculino",19,"Si","Media","Privado",1,"Beca",3.45,37,1.25,"Virtual","De acuerdo","Totalmente en desacuerdo","Indeciso","De acuerdo","De acuerdo",26
+"SB11201910045892","Femenino",18,"Si","Baja","Privado",1,"Beca",3.62,57,1.9,"Presencial","De acuerdo","En desacuerdo","Indeciso","En desacuerdo","De acuerdo",25
+"SB11201910022784","Femenino",17,"Si","Media","Privado",1,"Beca",4.56,44,1.49,"Virtual","De acuerdo","Totalmente de acuerdo","De acuerdo","Indeciso","De acuerdo",24
+"SB11201910013511","Femenino",17,"Si","Alta","Privado",2,"Beca",3.81,40,1.35,"Presencial","De acuerdo","De acuerdo","Indeciso","De acuerdo","En desacuerdo",24
+"SB11201910013496","Masculino",16,"Si","Media","Privado",1,"Beca",4.13,34,1.16,"Virtual","De acuerdo","De acuerdo","Indeciso","En desacuerdo","Indeciso",24
+"SB11201910014696","Masculino",17,"Si","Baja","Privado",1,"Beca",3.58,38,1.29,"Virtual","De acuerdo","De acuerdo","En desacuerdo","Totalmente de acuerdo","En desacuerdo",22
+"SB11201910013469","Masculino",18,"No","Media","Privado",1,"Beca",4.1,85,2.85,"Virtual","De acuerdo","Totalmente de acuerdo","De acuerdo","En desacuerdo","De acuerdo",21
+"SB11201910047496","Femenino",19,"No","Baja","Privado",3,"Beca",4.31,44,1.49,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","Indeciso","En desacuerdo","De acuerdo",27
+"SB11201910013576","Masculino",17,"No","Media","Privado",3,"Beca",4.42,39,1.33,"Virtual","De acuerdo","En desacuerdo","De acuerdo","En desacuerdo","De acuerdo",19
+"SB11201910014705","Femenino",18,"No","Media","Privado",2,"Beca",4.11,39,1.3,"Presencial","De acuerdo","Totalmente en desacuerdo","Indeciso","De acuerdo","De acuerdo",18
+"SB11201910013426","Masculino",19,"No","Media","Privado",2,"Beca",3.9,35,1.02,"Virtual","De acuerdo","En desacuerdo","Indeciso","De acuerdo","De acuerdo",18
+"SB11201910022798","Masculino",21,"Si","Media","Privado",2,"Beca",4,48,0.61,"Presencial","De acuerdo","Totalmente en desacuerdo","De acuerdo","Indeciso","De acuerdo",17
+"SB11201910035823","Masculino",17,"No","Baja","Privado",2,"Beca",2.88,46,1.55,"Virtual","De acuerdo","En desacuerdo","De acuerdo","Indeciso","Totalmente en desacuerdo",17
+"SB11201910064436","Femenino",20,"No","Media","Privado",1,"Beca",3.56,48,1.63,"Presencial","De acuerdo","Totalmente en desacuerdo","De acuerdo","En desacuerdo","Indeciso",12
+"SB11201910058624","Masculino",20,"No","Media","Privado",1,"Beca",3.95,37,1.25,"Presencial","De acuerdo","En desacuerdo","En desacuerdo","En desacuerdo","Totalmente de acuerdo",18
+"SB11201910047596","Femenino",18,"No","Baja","Privado",3,"Beca",3.78,75,0.51,"Virtual","De acuerdo","Totalmente en desacuerdo","De acuerdo","Indeciso","De acuerdo",11
+"SB11201910058846","Femenino",18,"No","Media","Privado",1,"Beca",3.82,68,2.29,"Virtual","De acuerdo","Ni de acuerdo, ni en desacuerdo","Indeciso","En desacuerdo","Indeciso",9
+"SB11201910012200","Femenino",17,"No","Media","Privado",2,"Beca",3.38,54,1.82,"Presencial","De acuerdo","Totalmente de acuerdo","De acuerdo","En desacuerdo","De acuerdo",18
+"SB11201910018381","Femenino",16,"No","Baja","Privado",2,"Beca",4.02,55,1.84,"Virtual","De acuerdo","Totalmente en desacuerdo","Indeciso","De acuerdo","De acuerdo",20
+"SB11201910020806","Masculino",20,"No","Media","Privado",1,"Beca",3.2,58,0.96,"Virtual","De acuerdo","En desacuerdo","De acuerdo","En desacuerdo","En desacuerdo",22
+"SB11201910016948","Masculino",18,"Si","Alta","Privado",1,"Beca",4.22,47,0.59,"Presencial","Ni de acuerdo, ni en desacuerdo","En desacuerdo","De acuerdo","De acuerdo","De acuerdo",24
+"SB11201910018401","Masculino",22,"No","Media","Privado",3,"Beca",2.96,51,1.73,"Virtual","De acuerdo","Totalmente de acuerdo","Indeciso","De acuerdo","De acuerdo",26
+"SB11201910020798","Masculino",21,"No","Media","Privado",3,"Beca",3.98,42,1.42,"Presencial","De acuerdo","Totalmente en desacuerdo","De acuerdo","En desacuerdo","De acuerdo",28
+"SB11201910018391","Masculino",17,"No","Media","Privado",1,"Beca",3.71,31,1.06,"Presencial","De acuerdo","Totalmente en desacuerdo","De acuerdo","En desacuerdo","Indeciso",81
+"SB11201910020785","Femenino",17,"No","Baja","Privado",2,"Beca",3.5,66,2.23,"Presencial","De acuerdo","Totalmente en desacuerdo","Indeciso","De acuerdo","De acuerdo",78
+"SB11201910020838","Femenino",18,"No","Media","Privado",3,"Beca",3.73,77,0.57,"Presencial","De acuerdo","Totalmente en desacuerdo","De acuerdo","En desacuerdo","De acuerdo",77
+"SB11201910016953","Masculino",20,"Si","Baja","Privado",1,"Beca",3.09,79,0.66,"Virtual","De acuerdo","Totalmente en desacuerdo","De acuerdo","De acuerdo","De acuerdo",70
+"SB11201910016935","Masculino",18,"No","Media","Privado",1,"Beca",3.87,38,1.07,"Presencial","De acuerdo","Totalmente de acuerdo","De acuerdo","En desacuerdo","De acuerdo",68
+"SB11201910018389","Femenino",20,"No","Baja","Privado",1,"Beca",3.96,67,1.24,"Presencial","De acuerdo","Totalmente de acuerdo","De acuerdo","Indeciso","De acuerdo",65
+"SB11201910022580","Masculino",19,"No","Baja","Privado",2,"Beca",3.45,34,1.15,"Presencial","De acuerdo","En desacuerdo","De acuerdo","De acuerdo","Indeciso",54
+"SB11201910028681","Masculino",22,"No","Media","Privado",1,"Beca",4.07,65,1.19,"Presencial","De acuerdo","Totalmente de acuerdo","En desacuerdo","De acuerdo","Indeciso",50
+"SB11201910012813","Masculino",17,"No","Baja","Privado",1,"Beca",3.83,59,1.99,"Virtual","De acuerdo","De acuerdo","De acuerdo","Indeciso","De acuerdo",36
+"SB11201910021268","Masculino",19,"Si","Media","Privado",1,"Beca",4.62,75,0.51,"Virtual","De acuerdo","Totalmente de acuerdo","De acuerdo","En desacuerdo","De acuerdo",35
+"SB11201910005660","Masculino",21,"No","Alta","Privado",2,"Beca",3.59,30,1.01,"Virtual","En desacuerdo","Ni de acuerdo, ni en desacuerdo","Totalmente en desacuerdo","Totalmente de acuerdo","Totalmente en desacuerdo",35
+"SB11201910021257","Masculino",21,"No","Media","Privado",1,"Beca",3.87,51,1.73,"Presencial","De acuerdo","Totalmente en desacuerdo","Totalmente de acuerdo","Totalmente en desacuerdo","De acuerdo",34
+"SB11201910009353","Masculino",17,"No","Baja","Privado",1,"Beca",3.77,36,1.23,"Presencial","Ni de acuerdo, ni en desacuerdo","De acuerdo","Totalmente de acuerdo","Totalmente en desacuerdo","Totalmente de acuerdo",30
+"SB11201910021272","Femenino",21,"No","Media","Privado",1,"Beca",4.13,48,1.6,"Presencial","De acuerdo","Totalmente en desacuerdo","En desacuerdo","De acuerdo","De acuerdo",28
+"SB11201910004115","Masculino",19,"Si","Media","Privado",1,"Beca",2.83,87,0.91,"Presencial","De acuerdo","De acuerdo","Indeciso","De acuerdo","De acuerdo",28
+"SB11201910009323","Masculino",21,"No","Media","Privado",1,"Beca",3.47,70,0.55,"Presencial","De acuerdo","Totalmente en desacuerdo","Indeciso","De acuerdo","En desacuerdo",28
+"SB11201910005666","Masculino",18,"Si","Alta","Privado",1,"Beca",3.3,35,1.17,"Virtual","Ni de acuerdo, ni en desacuerdo","Totalmente en desacuerdo","En desacuerdo","De acuerdo","De acuerdo",28
+"SB11201910047409","Masculino",20,"Si","Baja","Privado",3,"Beca",4.43,44,1.49,"Presencial","De acuerdo","En desacuerdo","De acuerdo","Totalmente en desacuerdo","De acuerdo",26
+"SB11201910017256","Femenino",22,"Si","Alta","Privado",2,"Beca",3.36,79,2.65,"Presencial","De acuerdo","Totalmente de acuerdo","De acuerdo","De acuerdo","Indeciso",26
+"SB11201910021254","Masculino",18,"Si","Alta","Privado",1,"Beca",3.08,62,2.08,"Presencial","De acuerdo","Totalmente en desacuerdo","Indeciso","De acuerdo","Indeciso",25
+"SB11201910009318","Femenino",18,"Si","Media","Privado",1,"Beca",3.45,54,0.8,"Presencial","De acuerdo","De acuerdo","De acuerdo","Indeciso","De acuerdo",24
+"SB11201910005663","Femenino",17,"Si","Baja","Privado",1,"Beca",3.71,33,1.13,"Virtual","De acuerdo","Ni de acuerdo, ni en desacuerdo","De acuerdo","Indeciso","Indeciso",24
+"SB11201910004145","Masculino",19,"Si","Media","Privado",3,"Beca",3.38,49,0.64,"Virtual","De acuerdo","Totalmente de acuerdo","Indeciso","Indeciso","En desacuerdo",24
+"SB11201910017269","Femenino",18,"No","Media","Privado",1,"Beca",3.65,44,1.48,"Virtual","En desacuerdo","Ni de acuerdo, ni en desacuerdo","De acuerdo","De acuerdo","Totalmente de acuerdo",22
+"SB11201910009280","Femenino",19,"No","Media","Privado",2,"Credito",3.39,39,1.3,"Presencial","Ni de acuerdo, ni en desacuerdo","De acuerdo","Indeciso","Indeciso","Indeciso",20
+"SB11201910004152","Masculino",20,"No","Media","Privado",1,"Credito",3.27,34,1.15,"Presencial","De acuerdo","Totalmente en desacuerdo","De acuerdo","En desacuerdo","De acuerdo",20
+"SB11201910031876","Masculino",22,"Si","Baja","Privado",1,"Beca",3.08,43,1.32,"Virtual","De acuerdo","Totalmente de acuerdo","Totalmente de acuerdo","De acuerdo","En desacuerdo",19
+"SB11201910005659","Masculino",19,"Si","Media","Privado",1,"Beca",3.37,48,0.61,"Virtual","En desacuerdo","Totalmente de acuerdo","Indeciso","En desacuerdo","Totalmente de acuerdo",18
+"SB11201910021259","Femenino",21,"Si","Alta","Privado",1,"Beca",3.83,25,1.37,"Presencial","De acuerdo","En desacuerdo","Indeciso","En desacuerdo","Indeciso",18
+"SB11201910009275","Masculino",19,"Si","Baja","Privado",1,"Beca",3.25,34,1.14,"Virtual","Ni de acuerdo, ni en desacuerdo","Totalmente de acuerdo","Totalmente en desacuerdo","Indeciso","Indeciso",17
+"SB11201910024680","Masculino",21,"No","Alta","Privado",1,"Beca",3.77,44,1.47,"Virtual","De acuerdo","En desacuerdo","De acuerdo","De acuerdo","De acuerdo",17
+"SB11201910024695","Masculino",21,"Si","Alta","Privado",1,"Beca",4.07,43,1.46,"Presencial","En desacuerdo","Totalmente de acuerdo","Indeciso","En desacuerdo","De acuerdo",12
+"SB11201910024824","Masculino",19,"Si","Media","Privado",1,"Beca",4.03,43,1.1,"Virtual","Ni de acuerdo, ni en desacuerdo","Totalmente en desacuerdo","De acuerdo","De acuerdo","De acuerdo",10
+"SB11201910024672","Masculino",18,"No","Media","Privado",2,"Beca",3.4,45,1.52,"Virtual","De acuerdo","Totalmente de acuerdo","Indeciso","De acuerdo","De acuerdo",10
+"SB11201910024549","Femenino",21,"Si","Baja","Privado",1,"Beca",3.38,63,2.12,"Virtual","De acuerdo","Ni de acuerdo, ni en desacuerdo","Indeciso","De acuerdo","Indeciso",9
+"SB11201910024610","Masculino",18,"No","Baja","Privado",1,"Credito",4.27,49,1.65,"Presencial","En desacuerdo","De acuerdo","De acuerdo","Indeciso","De acuerdo",9
+"SB11201910024540","Masculino",20,"No","Media","Privado",2,"Credito",3.89,39,1.33,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","Indeciso","Totalmente de acuerdo","Indeciso",15
+"SB11201910024576","Femenino",21,"No","Baja","Privado",1,"Beca",3.02,70,0.36,"Virtual","De acuerdo","Totalmente en desacuerdo","De acuerdo","De acuerdo","En desacuerdo",17
+"SB11201910024670","Masculino",19,"No","Baja","Privado",3,"Beca",3.19,41,1.37,"Presencial","De acuerdo","Totalmente de acuerdo","Totalmente en desacuerdo","Totalmente de acuerdo","Indeciso",19
+"SB11201910024559","Femenino",17,"No","Baja","Privado",3,"Beca",3.96,44,1.49,"Presencial","Ni de acuerdo, ni en desacuerdo","De acuerdo","En desacuerdo","Totalmente de acuerdo","Indeciso",21
+"SB11201910024615","Femenino",17,"No","Baja","Privado",1,"Beca",3.66,54,0.8,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","Indeciso","Indeciso","De acuerdo",23
+"SB11201910029059","Masculino",22,"No","Baja","Privado",1,"Beca",3.69,52,0.74,"Presencial","Ni de acuerdo, ni en desacuerdo","Totalmente en desacuerdo","De acuerdo","En desacuerdo","De acuerdo",32
+"SB11201910024589","Masculino",16,"No","Media","Privado",2,"Beca",2.9,45,1.5,"Virtual","De acuerdo","De acuerdo","De acuerdo","Totalmente de acuerdo","De acuerdo",77
+"SB11201910024676","Femenino",18,"No","Baja","Privado",1,"Beca",3.37,57,0.92,"Presencial","Ni de acuerdo, ni en desacuerdo","Totalmente en desacuerdo","Totalmente de acuerdo","Totalmente en desacuerdo","Totalmente de acuerdo",72
+"SB11201910024599","Masculino",17,"No","Baja","Privado",3,"Beca",3.47,31,1.05,"Presencial","Ni de acuerdo, ni en desacuerdo","Totalmente en desacuerdo","De acuerdo","Indeciso","De acuerdo",60
+"SB11201910024573","Masculino",19,"No","Media","Privado",3,"Credito",3.7,36,1.04,"Virtual","De acuerdo","Ni de acuerdo, ni en desacuerdo","Indeciso","En desacuerdo","Indeciso",69
+"SB11201910024595","Femenino",16,"No","Media","Privado",3,"Credito",3.35,48,1.62,"Presencial","Ni de acuerdo, ni en desacuerdo","Ni de acuerdo, ni en desacuerdo","De acuerdo","Indeciso","Indeciso",65
+"SB11201910024760","Femenino",21,"No","Baja","Privado",3,"Credito",3.87,31,1.39,"Presencial","De acuerdo","Totalmente de acuerdo","Totalmente de acuerdo","De acuerdo","En desacuerdo",54
+"SB11201910024538","Masculino",19,"No","Baja","Privado",3,"Credito",3.73,36,1.2,"Presencial","Ni de acuerdo, ni en desacuerdo","Totalmente de acuerdo","De acuerdo","Totalmente de acuerdo","De acuerdo",52
+"SB11201910024703","Masculino",21,"No","Media","Privado",2,"Beca",4.19,59,1.98,"Virtual","En desacuerdo","En desacuerdo","Totalmente en desacuerdo","De acuerdo","En desacuerdo",36
+"SB11201910024544","Masculino",17,"No","Baja","Privado",3,"Beca",3.23,76,1.22,"Presencial","De acuerdo","Totalmente de acuerdo","De acuerdo","Indeciso","De acuerdo",35
+"SB11201910013386","Masculino",18,"No","Media","Privado",3,"Beca",3.41,50,2,"Presencial","De acuerdo","En desacuerdo","Indeciso","De acuerdo","Totalmente en desacuerdo",35
+"SB11201910024941","Masculino",21,"No","Media","Privado",3,"Credito",3.01,46,1.55,"Presencial","De acuerdo","Totalmente en desacuerdo","Totalmente de acuerdo","De acuerdo","Totalmente de acuerdo",34
+"SB11201910013560","Femenino",20,"No","Media","Privado",3,"Beca",3.82,38,1.28,"Virtual","Ni de acuerdo, ni en desacuerdo","De acuerdo","De acuerdo","Indeciso","De acuerdo",32
+"SB11201910013475","Masculino",20,"No","Media","Privado",3,"Credito",3.32,36,1.21,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","En desacuerdo","De acuerdo","De acuerdo",28
+"SB11201910013521","Masculino",18,"Si","Baja","Privado",2,"Beca",3.67,34,1.16,"Presencial","De acuerdo","Totalmente en desacuerdo","Indeciso","Totalmente de acuerdo","Totalmente de acuerdo",28
+"SB11201910011798","Masculino",20,"No","Media","Privado",1,"Beca",2.94,47,1.59,"Virtual","Ni de acuerdo, ni en desacuerdo","Totalmente en desacuerdo","De acuerdo","De acuerdo","De acuerdo",28
+"SB11201910011672","Masculino",16,"No","Baja","Privado",2,"Credito",2.2,36,1.21,"Virtual","De acuerdo","Totalmente en desacuerdo","De acuerdo","En desacuerdo","Indeciso",28
+"SB11201910011696","Femenino",30,"No","Baja","Privado",3,"Beca",3.95,67,2.25,"Virtual","De acuerdo","Totalmente en desacuerdo","De acuerdo","En desacuerdo","Totalmente de acuerdo",26
+"SB11201910011655","Femenino",18,"No","Baja","Privado",2,"Beca",3.99,66,2,"Presencial","De acuerdo","Totalmente de acuerdo","De acuerdo","De acuerdo","Indeciso",26
+"SB11201910011945","Femenino",20,"No","Alta","Privado",2,"Credito",3.98,74,0.48,"Presencial","Ni de acuerdo, ni en desacuerdo","En desacuerdo","De acuerdo","Indeciso","Indeciso",25
+"SB11201910011934","Femenino",17,"No","Media","Privado",3,"Credito",3.45,38,1.27,"Virtual","De acuerdo","En desacuerdo","De acuerdo","Indeciso","De acuerdo",24
+"SB11201910011921","Femenino",19,"No","Alta","Privado",3,"Beca",3.7,45,1.5,"Presencial","De acuerdo","De acuerdo","Totalmente de acuerdo","Totalmente en desacuerdo","Totalmente de acuerdo",24
+"SB11201910011947","Femenino",18,"No","Baja","Privado",2,"Credito",4.2,51,1.72,"Presencial","Ni de acuerdo, ni en desacuerdo","De acuerdo","Indeciso","De acuerdo","En desacuerdo",24
+"SB11201910011805","Masculino",20,"No","Media","Privado",3,"Credito",3.5,43,1.45,"Presencial","En desacuerdo","Totalmente en desacuerdo","Indeciso","Indeciso","Totalmente de acuerdo",22
+"SB11201910011719","Femenino",20,"No","Media","Privado",3,"Beca",4.55,38,1.27,"Presencial","Ni de acuerdo, ni en desacuerdo","Totalmente en desacuerdo","De acuerdo","En desacuerdo","De acuerdo",21
+"SB11201910011663","Femenino",18,"No","Baja","Privado",3,"Credito",3.45,58,1.94,"Presencial","Ni de acuerdo, ni en desacuerdo","De acuerdo","De acuerdo","En desacuerdo","Indeciso",27
+"SB11201910011794","Masculino",22,"Si","Baja","Privado",3,"Credito",3.4,70,1.34,"Presencial","De acuerdo","De acuerdo","Indeciso","De acuerdo","Indeciso",19
+"SB11201910024727","Femenino",22,"No","Baja","Privado",3,"Credito",4.21,38,1.29,"Virtual","De acuerdo","En desacuerdo","De acuerdo","Indeciso","De acuerdo",18
+"SB11201910011896","Femenino",16,"No","Media","Privado",3,"Credito",3.81,31,1.05,"Presencial","De acuerdo","De acuerdo","Indeciso","Totalmente de acuerdo","Indeciso",18
+"SB11201910011699","Femenino",17,"No","Media","Privado",3,"Credito",4.04,61,2.06,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","Indeciso","De acuerdo","Indeciso",17
+"SB11201910011876","Masculino",21,"No","Baja","Privado",2,"Credito",3.9,48,1.63,"Presencial","Ni de acuerdo, ni en desacuerdo","Totalmente de acuerdo","Indeciso","Totalmente en desacuerdo","De acuerdo",17
+"SB11201910011704","Femenino",18,"No","Alta","Privado",3,"Credito",4.45,59,1.99,"Presencial","Ni de acuerdo, ni en desacuerdo","Totalmente de acuerdo","En desacuerdo","Totalmente de acuerdo","Totalmente en desacuerdo",12
+"SB11201910011936","Masculino",17,"No","Baja","Privado",2,"Credito",4.16,54,1.8,"Presencial","En desacuerdo","Totalmente de acuerdo","En desacuerdo","Totalmente en desacuerdo","De acuerdo",18
+"SB11201910024720","Masculino",18,"No","Media","Privado",2,"Credito",3.69,30,1.02,"Presencial","De acuerdo","En desacuerdo","Indeciso","Indeciso","De acuerdo",11
+"SB11201910011886","Femenino",20,"No","Baja","Privado",3,"Credito",4.16,67,2.25,"Presencial","De acuerdo","De acuerdo","De acuerdo","En desacuerdo","Indeciso",9
+"SB11201910030100","Femenino",20,"No","Media","Privado",2,"Credito",2.85,45,1.51,"Presencial","Ni de acuerdo, ni en desacuerdo","Totalmente de acuerdo","Totalmente en desacuerdo","Indeciso","De acuerdo",25
+"SB11201910038167","Femenino",20,"No","Media","Privado",2,"Credito",4.43,61,2.04,"Virtual","De acuerdo","Ni de acuerdo, ni en desacuerdo","Indeciso","Totalmente de acuerdo","En desacuerdo",27
+"SB11201910038112","Masculino",18,"No","Alta","Publico",1,"Credito",4.21,81,0.7,"Presencial","De acuerdo","Totalmente de acuerdo","Indeciso","Indeciso","De acuerdo",29
+"SB11201910038301","Femenino",18,"Si","Alta","Privado",3,"Credito",4.19,53,1.79,"Virtual","De acuerdo","Ni de acuerdo, ni en desacuerdo","De acuerdo","De acuerdo","Totalmente de acuerdo",31
+"SB11201910055213","Masculino",17,"No","Media","Publico",1,"Credito",3.89,34,1.15,"Virtual","De acuerdo","Ni de acuerdo, ni en desacuerdo","De acuerdo","De acuerdo","De acuerdo",33
+"SB11201910047701","Femenino",17,"No","Media","Privado",3,"Credito",4.36,87,2.59,"Presencial","Ni de acuerdo, ni en desacuerdo","Totalmente de acuerdo","En desacuerdo","Indeciso","Totalmente en desacuerdo",9
+"SB11201910038508","Femenino",22,"No","Media","Privado",3,"Credito",3.39,33,1.11,"Presencial","De acuerdo","Totalmente de acuerdo","Totalmente de acuerdo","Totalmente de acuerdo","De acuerdo",81
+"SB11201910038409","Femenino",22,"No","Baja","Privado",2,"Credito",3.37,35,1.18,"Virtual","De acuerdo","Ni de acuerdo, ni en desacuerdo","En desacuerdo","Indeciso","De acuerdo",78
+"SB11201910038025","Masculino",17,"No","Baja","Publico",1,"Credito",4.19,48,1.62,"Virtual","De acuerdo","De acuerdo","De acuerdo","Totalmente en desacuerdo","Totalmente de acuerdo",77
+"SB11201910055011","Femenino",18,"No","Media","Privado",2,"Credito",3.51,35,1.19,"Virtual","De acuerdo","Totalmente en desacuerdo","Indeciso","En desacuerdo","En desacuerdo",70
+"SB11201910038188","Femenino",22,"No","Baja","Privado",2,"Credito",3.04,43,1.46,"Virtual","De acuerdo","De acuerdo","De acuerdo","De acuerdo","De acuerdo",68
+"SB11201910038389","Femenino",21,"No","Alta","Privado",1,"Beca",3.86,69,2.33,"Presencial","De acuerdo","De acuerdo","Indeciso","Totalmente en desacuerdo","Indeciso",65
+"SB11201910038324","Masculino",18,"No","Alta","Publico",3,"Credito",2.87,37,1.09,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","Totalmente en desacuerdo","Totalmente de acuerdo","De acuerdo",54
+"SB11201910038340","Femenino",21,"No","Baja","Privado",3,"Credito",3.94,31,1.05,"Presencial","De acuerdo","De acuerdo","De acuerdo","Indeciso","De acuerdo",50
+"SB11201910047579","Masculino",18,"No","Media","Publico",2,"Credito",3.75,42,1.43,"Presencial","Ni de acuerdo, ni en desacuerdo","Ni de acuerdo, ni en desacuerdo","De acuerdo","De acuerdo","De acuerdo",36
+"SB11201910038152","Femenino",21,"No","Baja","Privado",1,"Credito",3.63,42,1.4,"Presencial","Ni de acuerdo, ni en desacuerdo","De acuerdo","De acuerdo","Indeciso","De acuerdo",35
+"SB11201910038563","Femenino",16,"No","Media","Privado",3,"Credito",3.66,37,1.26,"Presencial","De acuerdo","De acuerdo","De acuerdo","Indeciso","De acuerdo",35
+"SB11201910047870","Masculino",17,"No","Alta","Publico",3,"Credito",3.51,84,0.82,"Presencial","En desacuerdo","Ni de acuerdo, ni en desacuerdo","Indeciso","De acuerdo","Indeciso",34
+"SB11201910038554","Femenino",20,"No","Media","Publico",1,"Credito",3.74,63,2.12,"Presencial","Ni de acuerdo, ni en desacuerdo","Ni de acuerdo, ni en desacuerdo","Indeciso","En desacuerdo","Indeciso",30
+"SB11201910047628","Femenino",17,"No","Baja","Publico",2,"Credito",4.52,61,0.38,"Presencial","En desacuerdo","Ni de acuerdo, ni en desacuerdo","De acuerdo","En desacuerdo","De acuerdo",28
+"SB11201910038228","Femenino",21,"No","Baja","Publico",2,"Credito",4.39,58,2.13,"Virtual","De acuerdo","De acuerdo","De acuerdo","De acuerdo","De acuerdo",28
+"SB11201910038250","Femenino",19,"Si","Alta","Privado",2,"Beca",3.27,64,1.16,"Virtual","De acuerdo","De acuerdo","De acuerdo","En desacuerdo","En desacuerdo",28
+"SB11201910038276","Femenino",19,"Si","Media","Privado",3,"Credito",3.12,87,0.93,"Presencial","En desacuerdo","Ni de acuerdo, ni en desacuerdo","En desacuerdo","Indeciso","Totalmente de acuerdo",28
+"SB11201910059682","Femenino",20,"Si","Baja","Privado",1,"Credito",3.73,56,1.88,"Virtual","Ni de acuerdo, ni en desacuerdo","De acuerdo","Totalmente de acuerdo","En desacuerdo","De acuerdo",26
+"SB11201910038436","Femenino",14,"Si","Media","Privado",2,"Credito",3.11,85,0.84,"Presencial","De acuerdo","En desacuerdo","Indeciso","De acuerdo","De acuerdo",26
+"SB11201910048581","Femenino",17,"Si","Media","Privado",3,"Credito",4.32,32,1.09,"Presencial","En desacuerdo","Totalmente en desacuerdo","De acuerdo","En desacuerdo","De acuerdo",25
+"SB11201910055285","Masculino",21,"Si","Baja","Privado",3,"Credito",3.25,30,1.09,"Presencial","De acuerdo","Totalmente en desacuerdo","Totalmente en desacuerdo","Indeciso","En desacuerdo",24
+"SB11201910059764","Femenino",21,"Si","Media","Privado",3,"Credito",3.32,56,1.88,"Presencial","De acuerdo","Totalmente en desacuerdo","Indeciso","De acuerdo","De acuerdo",24
+"SB11201910038470","Femenino",17,"Si","Baja","Privado",3,"Otro",3.63,39,1.06,"Presencial","Ni de acuerdo, ni en desacuerdo","Totalmente de acuerdo","Indeciso","En desacuerdo","Indeciso",24
+"SB11201910047776","Femenino",19,"Si","Media","Privado",1,"Credito",3.61,52,1.76,"Virtual","Ni de acuerdo, ni en desacuerdo","Totalmente de acuerdo","Indeciso","De acuerdo","En desacuerdo",22
+"SB11201910055355","Femenino",16,"Si","Media","Privado",2,"Credito",3.7,48,1.62,"Presencial","En desacuerdo","De acuerdo","De acuerdo","En desacuerdo","De acuerdo",12
+"SB11201910018214","Femenino",20,"Si","Media","Privado",3,"Credito",2.53,35,1.19,"Virtual","De acuerdo","De acuerdo","Indeciso","De acuerdo","De acuerdo",32
+"SB11201910054784","Femenino",19,"Si","Baja","Privado",2,"Otro",4.02,55,1.85,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","De acuerdo","Totalmente en desacuerdo","Totalmente de acuerdo",19
+"SB11201910016716","Femenino",20,"Si","Media","Privado",3,"Credito",4.21,37,1.24,"Presencial","De acuerdo","En desacuerdo","De acuerdo","Indeciso","De acuerdo",18
+"SB11201910048888","Masculino",19,"Si","Baja","Privado",1,"Otro",3.64,39,1.3,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","De acuerdo","De acuerdo","Indeciso",18
+"SB11201910016730","Femenino",17,"Si","Alta","Privado",3,"Credito",3.13,68,2.27,"Presencial","En desacuerdo","Totalmente de acuerdo","De acuerdo","De acuerdo","En desacuerdo",17
+"SB11201910016743","Femenino",21,"Si","Media","Privado",2,"Credito",3.5,35,1.17,"Virtual","En desacuerdo","De acuerdo","Indeciso","Indeciso","En desacuerdo",17
+"SB11201910040359","Masculino",17,"Si","Alta","Privado",1,"Credito",3.31,30,1.05,"Presencial","De acuerdo","En desacuerdo","Indeciso","Totalmente de acuerdo","Indeciso",12
+"SB11201910028108","Femenino",19,"Si","Media","Privado",2,"Credito",3.52,31,1.04,"Virtual","Ni de acuerdo, ni en desacuerdo","Totalmente de acuerdo","En desacuerdo","Totalmente de acuerdo","De acuerdo",21
+"SB11201910028102","Femenino",17,"Si","Media","Privado",1,"Credito",3.97,62,2.07,"Presencial","Ni de acuerdo, ni en desacuerdo","Ni de acuerdo, ni en desacuerdo","De acuerdo","Totalmente de acuerdo","En desacuerdo",21
+"SB11201910021350","Femenino",18,"Si","Media","Privado",3,"Credito",4.03,74,0.48,"Virtual","En desacuerdo","Totalmente en desacuerdo","En desacuerdo","Indeciso","En desacuerdo",9
+"SB11201910021358","Masculino",17,"Si","Alta","Privado",2,"Credito",3.43,61,2.04,"Presencial","Ni de acuerdo, ni en desacuerdo","Totalmente en desacuerdo","Indeciso","Totalmente de acuerdo","Totalmente en desacuerdo",9
+"SB11201910040365","Femenino",18,"Si","Baja","Privado",2,"Credito",3.53,38,1.28,"Virtual","De acuerdo","De acuerdo","Indeciso","Totalmente de acuerdo","Totalmente en desacuerdo",35
+"SB11201910040344","Masculino",21,"Si","Alta","Privado",1,"Credito",2.89,68,2.29,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","En desacuerdo","Totalmente de acuerdo","Totalmente en desacuerdo",37
+"SB11201910040397","Masculino",19,"Si","Media","Privado",2,"Credito",3.62,33,1.11,"Presencial","De acuerdo","De acuerdo","De acuerdo","Indeciso","En desacuerdo",39
+"SB11201910028111","Masculino",20,"No","Media","Publico",1,"Credito",3.84,74,2.2,"Virtual","De acuerdo","Totalmente en desacuerdo","De acuerdo","Indeciso","Totalmente de acuerdo",24
+"SB11201910040417","Femenino",21,"Si","Baja","Publico",2,"Credito",3.85,73,2.11,"Virtual","Ni de acuerdo, ni en desacuerdo","Totalmente en desacuerdo","Totalmente de acuerdo","Indeciso","De acuerdo",26
+"SB11201910028117","Femenino",18,"Si","Media","Publico",3,"Credito",2.35,36,1.08,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","En desacuerdo","De acuerdo","Indeciso",32
+"SB11201910040399","Femenino",20,"Si","Media","Publico",3,"Credito",3.78,76,2.54,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","Indeciso","Indeciso","De acuerdo",77
+"SB11201910040405","Femenino",19,"No","Alta","Publico",2,"Credito",4.04,53,2.13,"Presencial","De acuerdo","Totalmente en desacuerdo","Indeciso","De acuerdo","Indeciso",72
+"SB11201910047394","Femenino",19,"Si","Media","Publico",2,"Credito",3.72,53,1.78,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","Indeciso","De acuerdo","Indeciso",60
+"SB11201910040371","Masculino",18,"Si","Baja","Publico",2,"Credito",3.73,58,1.94,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","De acuerdo","De acuerdo","Indeciso",69
+"SB11201910028157","Femenino",20,"Si","Media","Publico",3,"Credito",4.21,86,0.87,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","De acuerdo","En desacuerdo","De acuerdo",65
+"SB11201910021566","Femenino",20,"Si","Baja","Publico",3,"Credito",3.79,60,2.33,"Presencial","De acuerdo","De acuerdo","Totalmente de acuerdo","En desacuerdo","De acuerdo",54
+"SB11201910028129","Masculino",22,"Si","Baja","Publico",3,"Otro",3.67,39,1.33,"Virtual","En desacuerdo","En desacuerdo","De acuerdo","En desacuerdo","Totalmente en desacuerdo",52
+"SB11201910040465","Masculino",19,"Si","Baja","Publico",1,"Credito",4.08,67,1.24,"Presencial","De acuerdo","Totalmente en desacuerdo","De acuerdo","De acuerdo","De acuerdo",36
+"SB11201910028110","Masculino",21,"No","Media","Publico",3,"Credito",4.31,86,0.89,"Presencial","En desacuerdo","En desacuerdo","De acuerdo","Indeciso","Indeciso",35
+"SB11201910040374","Masculino",19,"No","Media","Publico",3,"Credito",4.33,61,2.05,"Presencial","De acuerdo","Totalmente de acuerdo","De acuerdo","Totalmente de acuerdo","En desacuerdo",35
+"SB11201910040420","Femenino",17,"No","Media","Publico",1,"Credito",4.28,69,2.32,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","De acuerdo","Indeciso","Indeciso",34
+"SB11201910040387","Masculino",17,"No","Media","Publico",2,"Credito",4.14,63,0.46,"Presencial","En desacuerdo","Totalmente en desacuerdo","De acuerdo","En desacuerdo","De acuerdo",32
+"SB11201910040376","Masculino",19,"No","Media","Publico",1,"Credito",3.55,51,2.04,"Presencial","De acuerdo","En desacuerdo","De acuerdo","Indeciso","En desacuerdo",28
+"SB11201910028113","Femenino",16,"No","Media","Publico",3,"Credito",3.98,70,0.56,"Presencial","De acuerdo","De acuerdo","De acuerdo","Indeciso","De acuerdo",28
+"SB11201910040413","Femenino",19,"No","Media","Publico",1,"Credito",3.22,52,1.74,"Presencial","De acuerdo","Totalmente de acuerdo","De acuerdo","En desacuerdo","De acuerdo",28
+"SB11201910040358","Femenino",20,"No","Baja","Publico",2,"Credito",4.22,74,0.48,"Virtual","Ni de acuerdo, ni en desacuerdo","De acuerdo","De acuerdo","En desacuerdo","De acuerdo",28
+"SB11201910040379","Femenino",16,"No","Baja","Publico",2,"Credito",2.5,72,2.42,"Virtual","De acuerdo","Totalmente de acuerdo","Indeciso","De acuerdo","En desacuerdo",26
+"SB11201910021572","Masculino",18,"No","Media","Publico",2,"Credito",4,47,0.59,"Presencial","Ni de acuerdo, ni en desacuerdo","Totalmente de acuerdo","Totalmente de acuerdo","En desacuerdo","Totalmente de acuerdo",26
+"SB11201910040472","Femenino",20,"No","Media","Publico",1,"Credito",4.15,86,0.89,"Presencial","En desacuerdo","Totalmente de acuerdo","De acuerdo","Indeciso","De acuerdo",25
+"SB11201910040357","Masculino",22,"No","Media","Publico",2,"Credito",3.47,47,1.58,"Presencial","De acuerdo","Totalmente en desacuerdo","En desacuerdo","Totalmente de acuerdo","Totalmente en desacuerdo",24
+"SB11201910021571","Femenino",20,"No","Alta","Publico",3,"Credito",3.04,51,0.71,"Presencial","De acuerdo","De acuerdo","De acuerdo","Indeciso","Indeciso",24
+"SB11201910021352","Masculino",21,"Si","Media","Publico",2,"Credito",3.23,39,1.33,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","Indeciso","De acuerdo","En desacuerdo",24
+"SB11201910040462","Masculino",21,"Si","Media","Publico",3,"Credito",2.9,52,0.74,"Presencial","De acuerdo","Totalmente en desacuerdo","Indeciso","En desacuerdo","Indeciso",22
+"SB11201910021559","Masculino",18,"Si","Alta","Publico",1,"Credito",3.53,76,0.55,"Virtual","Ni de acuerdo, ni en desacuerdo","Ni de acuerdo, ni en desacuerdo","De acuerdo","Totalmente de acuerdo","En desacuerdo",21
+"SB11201910021351","Masculino",17,"Si","Media","Publico",3,"Credito",2.7,55,1.19,"Presencial","En desacuerdo","De acuerdo","Indeciso","Indeciso","Indeciso",27
+"SB11201910040423","Femenino",17,"Si","Media","Publico",2,"Credito",2.78,41,1.39,"Presencial","De acuerdo","Totalmente de acuerdo","Totalmente en desacuerdo","En desacuerdo","En desacuerdo",19
+"SB11201910028154","Masculino",22,"Si","Media","Publico",3,"Credito",4.05,46,1.54,"Presencial","Ni de acuerdo, ni en desacuerdo","De acuerdo","Totalmente en desacuerdo","Totalmente en desacuerdo","En desacuerdo",18
+"SB11201910021587","Masculino",19,"Si","Media","Publico",2,"Credito",3.83,45,1.53,"Presencial","De acuerdo","De acuerdo","De acuerdo","Indeciso","De acuerdo",18
+"SB11201910047249","Masculino",16,"Si","Baja","Publico",3,"Credito",4.11,62,2,"Presencial","En desacuerdo","En desacuerdo","De acuerdo","Totalmente en desacuerdo","Totalmente de acuerdo",17
+"SB11201910021567","Masculino",17,"Si","Baja","Publico",3,"Credito",3.68,44,1.49,"Presencial","De acuerdo","En desacuerdo","De acuerdo","Indeciso","Indeciso",17
+"SB11201910040451","Femenino",18,"Si","Media","Publico",3,"Credito",3.85,63,2.12,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","En desacuerdo","Indeciso","En desacuerdo",12
+"SB11201910021361","Femenino",19,"Si","Media","Publico",3,"Credito",3.71,35,1.18,"Virtual","En desacuerdo","Totalmente en desacuerdo","Indeciso","Indeciso","De acuerdo",18
+"SB11201910040411","Masculino",18,"Si","Media","Publico",3,"Credito",4.2,48,1.6,"Presencial","En desacuerdo","Totalmente de acuerdo","En desacuerdo","En desacuerdo","En desacuerdo",11
+"SB11201910021577","Femenino",20,"Si","Baja","Publico",1,"Credito",3.25,41,1.37,"Presencial","En desacuerdo","En desacuerdo","De acuerdo","En desacuerdo","Indeciso",9
+"SB11201910040434","Masculino",19,"No","Media","Publico",2,"Credito",3.83,62,2.09,"Presencial","De acuerdo","En desacuerdo","De acuerdo","Indeciso","Indeciso",28
+"SB11201910021369","Femenino",22,"Si","Media","Publico",3,"Credito",3.66,34,1.16,"Presencial","De acuerdo","De acuerdo","De acuerdo","De acuerdo","Indeciso",30
+"SB11201910028133","Masculino",20,"Si","Baja","Publico",1,"Credito",3.39,48,1.63,"Virtual","De acuerdo","Totalmente de acuerdo","De acuerdo","Indeciso","Indeciso",32
+"SB11201910021385","Femenino",20,"Si","Media","Publico",2,"Credito",3.88,36,1.23,"Presencial","Ni de acuerdo, ni en desacuerdo","De acuerdo","Totalmente en desacuerdo","De acuerdo","Indeciso",34
+"SB11201910021332","Femenino",16,"Si","Media","Publico",3,"Credito",3.63,81,0.73,"Presencial","En desacuerdo","Totalmente en desacuerdo","De acuerdo","De acuerdo","Indeciso",36
+"SB11201910028131","Femenino",21,"Si","Media","Publico",2,"Credito",3.98,53,2.11,"Presencial","De acuerdo","En desacuerdo","De acuerdo","Indeciso","De acuerdo",38
+"SB11201910021362","Masculino",18,"Si","Baja","Publico",1,"Credito",3.64,68,1.28,"Presencial","De acuerdo","Totalmente de acuerdo","De acuerdo","En desacuerdo","Indeciso",81
+"SB11201910040390","Femenino",19,"Si","Baja","Publico",3,"Otro",3.48,32,1.07,"Presencial","De acuerdo","Totalmente en desacuerdo","En desacuerdo","De acuerdo","Indeciso",78
+"SB11201910040349","Femenino",21,"Si","Media","Publico",1,"Credito",3.57,75,2.5,"Presencial","Ni de acuerdo, ni en desacuerdo","De acuerdo","Totalmente en desacuerdo","Indeciso","De acuerdo",77
+"SB11201910021565","Femenino",21,"Si","Baja","Publico",1,"Otro",4.69,42,1.41,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","Totalmente de acuerdo","Totalmente en desacuerdo","Totalmente de acuerdo",70
+"SB11201910021553","Masculino",19,"Si","Baja","Publico",1,"Credito",4.88,69,1.31,"Presencial","En desacuerdo","De acuerdo","Indeciso","Indeciso","De acuerdo",68
+"SB11201910021339","Femenino",18,"Si","Baja","Publico",3,"Otro",3.96,37,1.26,"Presencial","De acuerdo","Totalmente en desacuerdo","Totalmente de acuerdo","Totalmente en desacuerdo","Totalmente de acuerdo",65
+"SB11201910040375","Masculino",18,"Si","Media","Publico",3,"Credito",4.14,45,1.53,"Presencial","Ni de acuerdo, ni en desacuerdo","Ni de acuerdo, ni en desacuerdo","Totalmente de acuerdo","Totalmente en desacuerdo","De acuerdo",54
+"SB11201910040337","Femenino",17,"Si","Media","Publico",1,"Credito",3.7,34,1.16,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","Indeciso","En desacuerdo","Totalmente de acuerdo",50
+"SB11201910040329","Femenino",19,"Si","Baja","Publico",2,"Credito",4.64,45,1.51,"Virtual","Ni de acuerdo, ni en desacuerdo","De acuerdo","En desacuerdo","Indeciso","En desacuerdo",36
+"SB11201910040398","Femenino",20,"Si","Media","Publico",3,"Credito",3.74,52,1.75,"Presencial","De acuerdo","Totalmente de acuerdo","Indeciso","En desacuerdo","Totalmente en desacuerdo",35
+"SB11201910040403","Femenino",17,"Si","Media","Publico",2,"Credito",4.57,39,1.31,"Presencial","En desacuerdo","Totalmente de acuerdo","Indeciso","De acuerdo","Indeciso",35
+"SB11201910028123","Femenino",20,"Si","Media","Publico",2,"Credito",3.44,59,0.99,"Virtual","En desacuerdo","Ni de acuerdo, ni en desacuerdo","De acuerdo","En desacuerdo","Indeciso",34
+"SB11201910021560","Masculino",18,"Si","Alta","Publico",3,"Credito",4.06,35,1.17,"Presencial","De acuerdo","De acuerdo","De acuerdo","En desacuerdo","Indeciso",30
+"SB11201910028116","Masculino",22,"Si","Media","Publico",3,"Credito",4.22,36,1.23,"Presencial","De acuerdo","Totalmente de acuerdo","En desacuerdo","En desacuerdo","Indeciso",28
+"SB11201910021404","Femenino",20,"Si","Baja","Publico",2,"Credito",4.44,42,1.41,"Presencial","De acuerdo","Totalmente en desacuerdo","De acuerdo","En desacuerdo","De acuerdo",28
+"SB11201910040414","Femenino",21,"Si","Alta","Publico",1,"Credito",4.34,89,0.98,"Presencial","De acuerdo","En desacuerdo","Indeciso","De acuerdo","De acuerdo",28
+"SB11201910040350","Masculino",18,"Si","Baja","Publico",2,"Otro",2.83,69,1.31,"Presencial","De acuerdo","En desacuerdo","Indeciso","De acuerdo","Totalmente en desacuerdo",28
+"SB11201910040421","Femenino",20,"Si","Media","Publico",2,"Credito",4.18,58,1.94,"Presencial","Ni de acuerdo, ni en desacuerdo","Totalmente de acuerdo","Totalmente de acuerdo","Totalmente en desacuerdo","Totalmente de acuerdo",26
+"SB11201910040425","Masculino",20,"Si","Baja","Publico",2,"Otro",3.98,33,1.12,"Presencial","En desacuerdo","Totalmente en desacuerdo","De acuerdo","Indeciso","Indeciso",26
+"SB11201910021579","Masculino",21,"No","Baja","Publico",3,"Otro",4.53,83,0.77,"Presencial","De acuerdo","En desacuerdo","De acuerdo","Totalmente en desacuerdo","Totalmente de acuerdo",25
+"SB11201910040382","Femenino",16,"No","Media","Publico",2,"Credito",3.66,63,2.11,"Virtual","De acuerdo","Ni de acuerdo, ni en desacuerdo","Totalmente de acuerdo","En desacuerdo","De acuerdo",24
+"SB11201910040339","Masculino",19,"No","Baja","Publico",1,"Otro",4.37,69,2.3,"Presencial","Ni de acuerdo, ni en desacuerdo","De acuerdo","Indeciso","Totalmente en desacuerdo","Indeciso",21
+"SB11201910040340","Femenino",21,"No","Baja","Publico",3,"Otro",4.3,33,1.11,"Presencial","De acuerdo","Totalmente en desacuerdo","De acuerdo","De acuerdo","Totalmente de acuerdo",24
+"SB11201910021580","Masculino",21,"No","Baja","Publico",3,"Otro",3.14,79,0.64,"Presencial","De acuerdo","Totalmente de acuerdo","De acuerdo","Totalmente de acuerdo","Totalmente en desacuerdo",22
+"SB11201910021368","Masculino",20,"No","Media","Publico",3,"Credito",4.4,65,2.18,"Virtual","De acuerdo","Totalmente de acuerdo","De acuerdo","En desacuerdo","De acuerdo",21
+"SB11201910021402","Masculino",21,"No","Media","Publico",3,"Credito",3.53,39,1.3,"Presencial","En desacuerdo","Totalmente en desacuerdo","Indeciso","En desacuerdo","Totalmente en desacuerdo",22
+"SB11201910021334","Femenino",16,"No","Media","Publico",2,"Credito",4.45,51,1.71,"Presencial","En desacuerdo","En desacuerdo","Totalmente de acuerdo","Totalmente en desacuerdo","De acuerdo",19
+"SB11201910040347","Masculino",18,"No","Media","Publico",2,"Credito",4.28,33,1.13,"Presencial","Ni de acuerdo, ni en desacuerdo","Ni de acuerdo, ni en desacuerdo","De acuerdo","Indeciso","De acuerdo",18
+"SB11201910021551","Femenino",18,"No","Media","Publico",2,"Credito",4.31,48,1.62,"Presencial","De acuerdo","De acuerdo","De acuerdo","Indeciso","De acuerdo",18
+"SB11201910040334","Femenino",18,"No","Alta","Publico",3,"Credito",3.78,41,1.39,"Presencial","De acuerdo","Totalmente de acuerdo","De acuerdo","En desacuerdo","Totalmente de acuerdo",17
+"SB11201910040404","Femenino",16,"No","Media","Publico",1,"Credito",3.34,52,0.74,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","Totalmente de acuerdo","Totalmente de acuerdo","Totalmente de acuerdo",17
+"SB11201910047364","Femenino",21,"No","Media","Publico",1,"Credito",3.89,77,1.24,"Presencial","En desacuerdo","Totalmente de acuerdo","De acuerdo","En desacuerdo","De acuerdo",12
+"SB11201910040395","Masculino",18,"No","Media","Publico",2,"Credito",2.98,49,0.66,"Virtual","Ni de acuerdo, ni en desacuerdo","Totalmente en desacuerdo","De acuerdo","En desacuerdo","De acuerdo",10
+"SB11201910028100","Masculino",19,"No","Media","Publico",1,"Credito",3.43,67,2.25,"Virtual","De acuerdo","Ni de acuerdo, ni en desacuerdo","Indeciso","En desacuerdo","Indeciso",10
+"SB11201910040474","Masculino",17,"No","Media","Publico",3,"Credito",4.06,76,2.56,"Presencial","De acuerdo","De acuerdo","Indeciso","Indeciso","De acuerdo",9
+"SB11201910029010","Masculino",19,"No","Baja","Publico",3,"Otro",3.71,48,1.62,"Presencial","De acuerdo","En desacuerdo","De acuerdo","Indeciso","De acuerdo",9
+"SB11201910021561","Masculino",21,"No","Media","Publico",3,"Credito",3.2,64,2.14,"Presencial","De acuerdo","Totalmente en desacuerdo","Indeciso","Indeciso","En desacuerdo",40
+"SB11201910021328","Femenino",18,"No","Baja","Publico",3,"Otro",3.65,36,1.21,"Virtual","Ni de acuerdo, ni en desacuerdo","Totalmente de acuerdo","De acuerdo","De acuerdo","Indeciso",42
+"SB11201910028112","Femenino",17,"No","Media","Publico",1,"Otro",3.06,49,0.66,"Virtual","En desacuerdo","De acuerdo","Indeciso","Indeciso","Totalmente en desacuerdo",44
+"SB11201910040325","Masculino",20,"No","Media","Publico",2,"Otro",3.72,34,1.06,"Presencial","Ni de acuerdo, ni en desacuerdo","Ni de acuerdo, ni en desacuerdo","De acuerdo","Totalmente en desacuerdo","Totalmente de acuerdo",46
+"SB11201910040377","Masculino",19,"No","Baja","Publico",2,"Otro",4.02,49,1.65,"Presencial","De acuerdo","Totalmente de acuerdo","De acuerdo","En desacuerdo","De acuerdo",48
+"SB11201910028130","Femenino",21,"No","Media","Publico",3,"Credito",3.8,34,1.34,"Virtual","De acuerdo","Ni de acuerdo, ni en desacuerdo","Indeciso","En desacuerdo","En desacuerdo",32
+"SB11201910028118","Masculino",18,"No","Media","Publico",1,"Credito",3.4,43,1.45,"Presencial","De acuerdo","De acuerdo","Indeciso","Indeciso","En desacuerdo",77
+"SB11201910040427","Masculino",18,"No","Baja","Publico",2,"Otro",2.62,39,1.3,"Virtual","Ni de acuerdo, ni en desacuerdo","De acuerdo","De acuerdo","Indeciso","De acuerdo",72
+"SB11201910021431","Masculino",20,"No","Media","Publico",3,"Otro",3.4,51,0.71,"Presencial","De acuerdo","Totalmente en desacuerdo","Indeciso","De acuerdo","Indeciso",60
+"SB11201910021583","Masculino",20,"No","Media","Publico",1,"Otro",3.31,33,1.12,"Presencial","Ni de acuerdo, ni en desacuerdo","Ni de acuerdo, ni en desacuerdo","De acuerdo","En desacuerdo","De acuerdo",69
+"SB11201910021575","Masculino",22,"No","Baja","Publico",2,"Otro",3.86,58,1.95,"Virtual","De acuerdo","En desacuerdo","Totalmente de acuerdo","En desacuerdo","Totalmente de acuerdo",65
+"SB11201910021563","Masculino",20,"No","Baja","Publico",3,"Otro",3.79,52,0.74,"Virtual","En desacuerdo","De acuerdo","Indeciso","De acuerdo","De acuerdo",54
+"SB11201910021333","Masculino",21,"No","Baja","Publico",3,"Otro",4.24,36,1.2,"Virtual","De acuerdo","En desacuerdo","Totalmente en desacuerdo","Totalmente en desacuerdo","Totalmente en desacuerdo",52
+"SB11201910040389","Femenino",16,"No","Alta","Publico",3,"Credito",2.81,30,1.02,"Presencial","De acuerdo","Totalmente de acuerdo","Totalmente en desacuerdo","Totalmente en desacuerdo","Totalmente en desacuerdo",36
+"SB11201910021568","Masculino",17,"Si","Media","Publico",3,"Credito",3.75,42,1.41,"Presencial","De acuerdo","De acuerdo","De acuerdo","De acuerdo","Totalmente de acuerdo",35
+"SB11201910040468","Masculino",18,"No","Media","Publico",2,"Otro",3.41,47,0.59,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","De acuerdo","De acuerdo","Indeciso",35
+"SB11201910028127","Masculino",17,"Si","Baja","Publico",2,"Otro",3.5,49,1.65,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","Totalmente de acuerdo","Totalmente de acuerdo","Totalmente de acuerdo",34
+"SB11201910040461","Masculino",19,"Si","Baja","Publico",3,"Otro",3.98,66,2.2,"Presencial","En desacuerdo","Totalmente en desacuerdo","De acuerdo","De acuerdo","Totalmente de acuerdo",32
+"SB11201910021562","Femenino",17,"Si","Media","Publico",3,"Otro",3.66,74,0.48,"Presencial","En desacuerdo","Totalmente de acuerdo","De acuerdo","De acuerdo","Indeciso",28
+"SB11201910021389","Masculino",20,"Si","Media","Publico",3,"Otro",4.02,84,2.8,"Presencial","De acuerdo","En desacuerdo","Totalmente de acuerdo","En desacuerdo","Indeciso",28
+"SB11201910021436","Femenino",17,"Si","Media","Publico",3,"Otro",2.84,35,1.17,"Virtual","De acuerdo","En desacuerdo","De acuerdo","En desacuerdo","De acuerdo",28
+"SB11201910040410","Femenino",19,"Si","Media","Publico",1,"Otro",3.56,35,1.18,"Presencial","Ni de acuerdo, ni en desacuerdo","Ni de acuerdo, ni en desacuerdo","De acuerdo","En desacuerdo","Indeciso",28
+"SB11201910021337","Masculino",20,"Si","Baja","Publico",3,"Otro",2.77,37,1.24,"Virtual","De acuerdo","Totalmente en desacuerdo","De acuerdo","De acuerdo","Totalmente de acuerdo",26
+"SB11201910040363","Femenino",18,"No","Media","Publico",2,"Otro",3.77,35,1.19,"Presencial","De acuerdo","Totalmente de acuerdo","Indeciso","De acuerdo","De acuerdo",26
+"SB11201910028134","Femenino",16,"No","Alta","Publico",2,"Credito",3.5,76,0.55,"Presencial","De acuerdo","De acuerdo","Totalmente de acuerdo","De acuerdo","De acuerdo",25
+"SB11201910040384","Masculino",21,"Si","Baja","Publico",2,"Otro",3.76,56,0.87,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","Totalmente de acuerdo","En desacuerdo","Totalmente de acuerdo",24
+"SB11201910047904","Masculino",12,"Si","Media","Publico",1,"Otro",3.8,51,1.7,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","De acuerdo","En desacuerdo","De acuerdo",24
+"SB11201910040356","Masculino",22,"Si","Media","Publico",2,"Otro",4.02,76,2.56,"Presencial","Ni de acuerdo, ni en desacuerdo","De acuerdo","Indeciso","Indeciso","Indeciso",24
+"SB11201910040386","Femenino",18,"Si","Baja","Publico",3,"Otro",3.85,39,1.32,"Presencial","En desacuerdo","Ni de acuerdo, ni en desacuerdo","Totalmente de acuerdo","De acuerdo","De acuerdo",22
+"SB11201910021555","Masculino",21,"Si","Baja","Publico",3,"Otro",3.9,80,2.69,"Presencial","De acuerdo","En desacuerdo","De acuerdo","Indeciso","Totalmente de acuerdo",21
+"SB11201910040400","Masculino",18,"Si","Media","Publico",2,"Otro",3.74,81,0.71,"Presencial","Ni de acuerdo, ni en desacuerdo","De acuerdo","De acuerdo","Indeciso","Totalmente de acuerdo",27
+"SB11201910040370","Masculino",21,"Si","Alta","Publico",2,"Credito",3.75,66,2.2,"Presencial","Ni de acuerdo, ni en desacuerdo","Totalmente en desacuerdo","De acuerdo","De acuerdo","Indeciso",19
+"SB11201910040394","Masculino",16,"Si","Media","Publico",3,"Otro",3.79,49,0.64,"Presencial","De acuerdo","Totalmente de acuerdo","Totalmente de acuerdo","En desacuerdo","De acuerdo",18
+"SB11201910040342","Masculino",17,"No","Media","Publico",3,"Otro",3.74,57,0.92,"Presencial","En desacuerdo","De acuerdo","Indeciso","De acuerdo","En desacuerdo",18
+"SB11201910021564","Femenino",20,"Si","Alta","Publico",3,"Credito",3.81,49,0.66,"Presencial","En desacuerdo","En desacuerdo","Indeciso","De acuerdo","De acuerdo",17
+"SB11201910028093","Masculino",20,"No","Media","Publico",1,"Otro",4.39,44,1.48,"Presencial","De acuerdo","Totalmente de acuerdo","De acuerdo","De acuerdo","Indeciso",17
+"SB11201910028107","Masculino",19,"No","Media","Publico",2,"Otro",3.14,39,1.3,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","Totalmente en desacuerdo","En desacuerdo","Totalmente en desacuerdo",12
+"SB11201910021356","Femenino",21,"No","Alta","Publico",3,"Credito",4.14,52,1.76,"Presencial","De acuerdo","Totalmente en desacuerdo","De acuerdo","Indeciso","De acuerdo",18
+"SB11201910040393","Masculino",19,"No","Media","Publico",2,"Otro",3.67,58,1.95,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","De acuerdo","Indeciso","De acuerdo",11
+"SB11201910028155","Femenino",17,"No","Media","Publico",2,"Otro",3.68,34,1.16,"Presencial","De acuerdo","Totalmente en desacuerdo","En desacuerdo","Totalmente de acuerdo","En desacuerdo",9
+"SB11201910028136","Femenino",21,"No","Media","Publico",3,"Otro",3.78,75,2.5,"Presencial","De acuerdo","De acuerdo","Indeciso","De acuerdo","En desacuerdo",30
+"SB11201910021554","Masculino",18,"No","Baja","Publico",2,"Otro",3.47,62,2.08,"Presencial","De acuerdo","Totalmente de acuerdo","De acuerdo","En desacuerdo","De acuerdo",33
+"SB11201910021558","Masculino",16,"No","Media","Publico",1,"Otro",3.95,68,2.29,"Presencial","De acuerdo","Totalmente en desacuerdo","Indeciso","De acuerdo","De acuerdo",32
+"SB11201910040412","Femenino",17,"No","Media","Publico",2,"Otro",3.66,64,2.14,"Presencial","De acuerdo","Totalmente en desacuerdo","Indeciso","De acuerdo","De acuerdo",36
+"SB11201910021336","Masculino",18,"No","Media","Publico",3,"Otro",3.23,70,2.03,"Presencial","De acuerdo","De acuerdo","Indeciso","En desacuerdo","De acuerdo",52
+"SB11201910021557","Masculino",21,"No","Alta","Publico",2,"Otro",3.69,66,1.22,"Virtual","De acuerdo","De acuerdo","De acuerdo","De acuerdo","De acuerdo",9
+"SB11201910028132","Femenino",18,"No","Media","Publico",2,"Otro",3.88,36,1.2,"Virtual","De acuerdo","De acuerdo","De acuerdo","En desacuerdo","De acuerdo",81
+"SB11201910028097","Femenino",19,"No","Media","Publico",2,"Otro",3.2,68,2.29,"Presencial","En desacuerdo","Totalmente en desacuerdo","Indeciso","Totalmente de acuerdo","Totalmente de acuerdo",78
+"SB11201910021386","Masculino",22,"No","Alta","Publico",2,"Otro",2.81,40,1.34,"Presencial","En desacuerdo","Ni de acuerdo, ni en desacuerdo","De acuerdo","De acuerdo","Indeciso",77
+"SB11201910040463","Masculino",19,"No","Media","Publico",2,"Otro",2.92,36,1.23,"Presencial","Ni de acuerdo, ni en desacuerdo","Ni de acuerdo, ni en desacuerdo","Indeciso","Indeciso","Totalmente en desacuerdo",70
+"SB11201910021459","Masculino",17,"No","Media","Publico",2,"Otro",3.61,42,1.43,"Presencial","De acuerdo","Totalmente en desacuerdo","Indeciso","En desacuerdo","De acuerdo",68
+"SB11201910021384","Masculino",17,"No","Alta","Publico",2,"Otro",2.98,48,1.63,"Presencial","En desacuerdo","Totalmente de acuerdo","De acuerdo","Indeciso","Indeciso",65
+"SB11201910028096","Masculino",17,"No","Media","Publico",3,"Otro",3.22,38,1.28,"Presencial","Ni de acuerdo, ni en desacuerdo","En desacuerdo","De acuerdo","De acuerdo","Indeciso",54
+"SB11201910040373","Femenino",17,"No","Media","Publico",3,"Otro",3.71,48,0.61,"Virtual","En desacuerdo","En desacuerdo","Indeciso","De acuerdo","De acuerdo",52
+"SB11201910021584","Masculino",18,"No","Media","Publico",2,"Otro",3.55,42,1.41,"Presencial","En desacuerdo","De acuerdo","Indeciso","De acuerdo","En desacuerdo",36
+"SB11201910021335","Masculino",20,"No","Media","Publico",3,"Otro",3.14,79,2,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","En desacuerdo","De acuerdo","De acuerdo",35
+"SB11201910021345","Masculino",17,"No","Media","Publico",2,"Otro",3.77,23,1.36,"Presencial","En desacuerdo","Totalmente en desacuerdo","De acuerdo","En desacuerdo","En desacuerdo",35
+"SB11201910041019","Masculino",21,"No","Media","Publico",2,"Otro",3.4,47,1.58,"Presencial","Ni de acuerdo, ni en desacuerdo","En desacuerdo","Indeciso","De acuerdo","Indeciso",34
+"SB11201910040326","Femenino",16,"No","Media","Publico",3,"Otro",2.45,44,1.47,"Virtual","De acuerdo","En desacuerdo","Indeciso","En desacuerdo","De acuerdo",30
+"SB11201910021574","Femenino",17,"No","Media","Publico",2,"Otro",3.46,53,1.79,"Presencial","En desacuerdo","Totalmente en desacuerdo","De acuerdo","En desacuerdo","Indeciso",28
+"SB11201910040343","Femenino",17,"No","Alta","Publico",2,"Otro",3.49,58,0.96,"Presencial","Ni de acuerdo, ni en desacuerdo","Ni de acuerdo, ni en desacuerdo","Indeciso","De acuerdo","En desacuerdo",28
+"SB11201910040328","Femenino",21,"No","Media","Publico",3,"Otro",3.77,51,1.73,"Presencial","De acuerdo","En desacuerdo","De acuerdo","En desacuerdo","De acuerdo",28
+"SB11201910028099","Femenino",16,"No","Alta","Publico",3,"Otro",3.38,37,1.08,"Presencial","De acuerdo","Totalmente en desacuerdo","De acuerdo","De acuerdo","Indeciso",28
+"SB11201910040354","Femenino",21,"No","Alta","Publico",3,"Otro",3.88,63,2.13,"Virtual","De acuerdo","Totalmente en desacuerdo","En desacuerdo","Totalmente de acuerdo","En desacuerdo",26
+"SB11201910040999","Masculino",18,"No","Media","Publico",2,"Otro",3.51,51,1.73,"Presencial","De acuerdo","Totalmente de acuerdo","Indeciso","De acuerdo","De acuerdo",26
+"SB11201910021406","Femenino",16,"No","Baja","Publico",2,"Otro",3.66,35,1.03,"Virtual","De acuerdo","Totalmente en desacuerdo","De acuerdo","De acuerdo","De acuerdo",25
+"SB11201910040346","Femenino",16,"No","Alta","Publico",2,"Otro",4.05,44,1.49,"Virtual","De acuerdo","De acuerdo","En desacuerdo","Totalmente de acuerdo","Indeciso",24
+"SB11201910021578","Masculino",17,"No","Alta","Publico",2,"Otro",3.72,58,1.95,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","Totalmente en desacuerdo","Totalmente de acuerdo","Indeciso",24
+"SB11201910040333","Femenino",21,"No","Baja","Publico",3,"Otro",3.33,86,0.88,"Virtual","De acuerdo","En desacuerdo","De acuerdo","De acuerdo","En desacuerdo",24
+"SB11201910028104","Femenino",21,"Si","Baja","Publico",2,"Otro",3.54,51,0.71,"Presencial","En desacuerdo","Ni de acuerdo, ni en desacuerdo","De acuerdo","En desacuerdo","De acuerdo",22
+"SB11201910021372","Femenino",20,"No","Alta","Publico",3,"Otro",3.62,36,1.22,"Presencial","En desacuerdo","Ni de acuerdo, ni en desacuerdo","De acuerdo","De acuerdo","Indeciso",20
+"SB11201910028122","Masculino",21,"No","Baja","Publico",1,"Otro",3.93,49,0.66,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","Totalmente de acuerdo","En desacuerdo","De acuerdo",20
+"SB11201910040335","Femenino",17,"No","Alta","Publico",2,"Otro",3.86,39,1.05,"Presencial","De acuerdo","Totalmente de acuerdo","En desacuerdo","Indeciso","En desacuerdo",19
+"SB11201910025245","Masculino",17,"No","Media","Publico",3,"Otro",3.79,62,2.07,"Presencial","Ni de acuerdo, ni en desacuerdo","Totalmente de acuerdo","De acuerdo","Totalmente en desacuerdo","Totalmente de acuerdo",18
+"SB11201910021409","Masculino",17,"Si","Baja","Publico",2,"Otro",3.65,88,0.96,"Presencial","En desacuerdo","Totalmente en desacuerdo","En desacuerdo","Totalmente de acuerdo","Indeciso",18
+"SB11201910040327","Femenino",20,"No","Media","Publico",2,"Otro",4.2,52,0.74,"Presencial","De acuerdo","De acuerdo","Indeciso","Indeciso","En desacuerdo",17
+"SB11201910021359","Femenino",20,"No","Alta","Publico",2,"Otro",3.92,36,1.2,"Virtual","De acuerdo","De acuerdo","Indeciso","De acuerdo","De acuerdo",17
+"SB11201910040332","Femenino",17,"No","Alta","Publico",3,"Otro",3.96,46,0.55,"Presencial","Ni de acuerdo, ni en desacuerdo","Ni de acuerdo, ni en desacuerdo","Totalmente en desacuerdo","Indeciso","Indeciso",12
+"SB11201910040351","Masculino",18,"No","Alta","Publico",2,"Otro",3.42,75,0.51,"Presencial","De acuerdo","Totalmente en desacuerdo","En desacuerdo","De acuerdo","En desacuerdo",11
+"SB11201910028103","Femenino",19,"No","Alta","Publico",2,"Otro",3.87,72,2.42,"Virtual","De acuerdo","Totalmente en desacuerdo","Totalmente en desacuerdo","Totalmente de acuerdo","Totalmente en desacuerdo",14
+"SB11201910040345","Masculino",19,"No","Media","Publico",2,"Otro",4.09,34,1.16,"Presencial","Ni de acuerdo, ni en desacuerdo","De acuerdo","Totalmente en desacuerdo","Totalmente de acuerdo","Totalmente de acuerdo",9
+"SB11201910040341","Femenino",19,"No","Media","Publico",3,"Otro",3.79,51,0.72,"Presencial","De acuerdo","En desacuerdo","Indeciso","De acuerdo","De acuerdo",9
+"SB11201910040392","Femenino",17,"No","Media","Publico",1,"Otro",3.64,60,2.03,"Presencial","De acuerdo","Totalmente en desacuerdo","De acuerdo","En desacuerdo","Totalmente en desacuerdo",42
+"SB11201910040360","Femenino",21,"No","Media","Publico",2,"Otro",3.28,51,1.73,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","En desacuerdo","De acuerdo","De acuerdo",43
+"SB11201910040367","Masculino",22,"No","Alta","Publico",3,"Otro",3.32,50,1.67,"Virtual","De acuerdo","Ni de acuerdo, ni en desacuerdo","En desacuerdo","Indeciso","En desacuerdo",17
+"SB11201910040388","Femenino",18,"No","Alta","Publico",2,"Otro",2.55,48,1.63,"Presencial","De acuerdo","Totalmente de acuerdo","Indeciso","De acuerdo","Indeciso",50
+"SB11201910021346","Femenino",19,"No","Media","Publico",3,"Otro",4.31,35,1.19,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","Indeciso","Totalmente en desacuerdo","Totalmente en desacuerdo",9
+"SB11201910040445","Femenino",20,"No","Media","Publico",1,"Otro",3.58,28,1.02,"Presencial","De acuerdo","En desacuerdo","Indeciso","Indeciso","Indeciso",1
+"SB11201910040348","Masculino",18,"No","Baja","Publico",1,"Otro",3.65,42,1.47,"Presencial","En desacuerdo","Ni de acuerdo, ni en desacuerdo","De acuerdo","Indeciso","Indeciso",77
+"SB11201910028098","Femenino",20,"No","Media","Publico",3,"Otro",4.51,55,1.84,"Presencial","De acuerdo","De acuerdo","De acuerdo","En desacuerdo","De acuerdo",72
+"SB11201910040368","Masculino",18,"No","Media","Publico",2,"Otro",4.14,42,1.42,"Presencial","En desacuerdo","Ni de acuerdo, ni en desacuerdo","Totalmente de acuerdo","Totalmente en desacuerdo","Totalmente de acuerdo",61
+"SB11201910040385","Femenino",18,"No","Media","Publico",2,"Otro",3.78,84,0.82,"Virtual","De acuerdo","Ni de acuerdo, ni en desacuerdo","Indeciso","Indeciso","De acuerdo",69
+"SB11201910040429","Femenino",18,"No","Media","Publico",3,"Otro",4.02,36,1.21,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","De acuerdo","En desacuerdo","En desacuerdo",65
+"SB11201910040361","Masculino",22,"No","Media","Publico",2,"Otro",3.27,39,1.33,"Virtual","En desacuerdo","De acuerdo","Totalmente de acuerdo","En desacuerdo","De acuerdo",54
+"SB11201910041407","Femenino",19,"No","Baja","Publico",1,"Otro",3.74,56,2.02,"Presencial","De acuerdo","Totalmente en desacuerdo","Indeciso","Indeciso","De acuerdo",52
+"SB11201910045933","Femenino",20,"No","Media","Publico",1,"Otro",4.28,55,1.84,"Presencial","De acuerdo","En desacuerdo","De acuerdo","En desacuerdo","Indeciso",36
+"SB11201910045809","Femenino",18,"No","Media","Publico",1,"Otro",3.99,38,1.15,"Presencial","De acuerdo","Ni de acuerdo, ni en desacuerdo","En desacuerdo","Indeciso","De acuerdo",35
+"SB11201910045769","Femenino",22,"Si","Media","Publico",2,"Otro",4.2,61,2.05,"Presencial","Ni de acuerdo, ni en desacuerdo","Totalmente en desacuerdo","Totalmente de acuerdo","Indeciso","De acuerdo",35
+"SB11201910045782","Femenino",19,"No","Media","Publico",1,"Otro",3.1,44,1.48,"Presencial","En desacuerdo","Totalmente en desacuerdo","De acuerdo","Indeciso","Indeciso",34
+"SB11201910045984","Femenino",21,"Si","Media","Publico",1,"Otro",4.13,39,1.33,"Presencial","De acuerdo","Totalmente de acuerdo","Totalmente de acuerdo","De acuerdo","Indeciso",35
+"SB11201910045820","Masculino",29,"Si","Media","Publico",1,"Otro",3.81,79,0.66,"Presencial","En desacuerdo","Totalmente de acuerdo","En desacuerdo","De acuerdo","De acuerdo",28
+"SB11201910045777","Femenino",21,"Si","Media","Publico",1,"Otro",3.54,45,1.52,"Presencial","De acuerdo","Totalmente de acuerdo","De acuerdo","En desacuerdo","De acuerdo",28
+"SB11201910046018","Masculino",16,"Si","Baja","Publico",1,"Otro",4.63,73,0.46,"Virtual","De acuerdo","Totalmente en desacuerdo","Totalmente de acuerdo","Totalmente en desacuerdo","Indeciso",29
+"SB11201910060823","Femenino",21,"Si","Media","Publico",2,"Otro",3.5,46,1.56,"Presencial","De acuerdo","En desacuerdo","De acuerdo","En desacuerdo","De acuerdo",28
+"SB11201910060979","Femenino",17,"Si","Alta","Publico",1,"Otro",3.89,80,2.69,"Presencial","De acuerdo","Totalmente en desacuerdo","En desacuerdo","De acuerdo","De acuerdo",27
+"SB11201910060773","Femenino",18,"Si","Baja","Publico",3,"Otro",3.22,50,2,"Presencial","De acuerdo","En desacuerdo","En desacuerdo","De acuerdo","En desacuerdo",26
+"SB11201910062660","Femenino",21,"No","Baja","Publico",3,"Otro",4.03,36,1.2,"Virtual","En desacuerdo","Ni de acuerdo, ni en desacuerdo","De acuerdo","De acuerdo","Totalmente de acuerdo",25
+"SB11201910062650","Femenino",21,"Si","Media","Publico",2,"Otro",3.95,67,2.25,"Virtual","De acuerdo","De acuerdo","De acuerdo","En desacuerdo","De acuerdo",24
+"SB11201910060776","Femenino",19,"Si","Alta","Publico",3,"Otro",3.7,55,1.84,"Presencial","Ni de acuerdo, ni en desacuerdo","Totalmente en desacuerdo","De acuerdo","De acuerdo","De acuerdo",23
+"SB11201910040827","Femenino",19,"No","Media","Publico",3,"Otro",3.01,33,1.11,"Presencial","De acuerdo","Totalmente de acuerdo","En desacuerdo","Indeciso","De acuerdo",24
+"SB11201910041039","Masculino",18,"Si","Baja","Publico",3,"Otro",3.99,37,1.26,"Virtual","En desacuerdo","Totalmente de acuerdo","De acuerdo","En desacuerdo","Totalmente de acuerdo",29
+"SB11201910040910","Femenino",19,"Si","Media","Publico",3,"Otro",3.85,35,1.18,"Presencial","De acuerdo","En desacuerdo","De acuerdo","Indeciso","Indeciso",21
+"SB11201910060914","Femenino",17,"Si","Media","Publico",3,"Otro",4.04,33,1.12,"Virtual","De acuerdo","De acuerdo","Totalmente de acuerdo","Indeciso","De acuerdo",27
+"SB11201910040869","Masculino",18,"No","Media","Publico",3,"Otro",4.15,62,2.42,"Presencial","En desacuerdo","De acuerdo","De acuerdo","Indeciso","En desacuerdo",19
+"SB11201910040887","Masculino",17,"Si","Media","Publico",3,"Otro",3.9,41,1.39,"Presencial","Ni de acuerdo, ni en desacuerdo","De acuerdo","De acuerdo","En desacuerdo","De acuerdo",18
+"SB11201910040981","Femenino",20,"No","Media","Publico",3,"Otro",3.64,40,1.36,"Presencial","De acuerdo","De acuerdo","Totalmente de acuerdo","En desacuerdo","Indeciso",15
+"SB11201910040935","Femenino",19,"Si","Media","Publico",1,"Otro",4.42,53,2.11,"Virtual","En desacuerdo","En desacuerdo","De acuerdo","De acuerdo","En desacuerdo",17
+"SB11201910043103","Masculino",17,"Si","Media","Publico",1,"Otro",3.45,56,0.89,"Presencial","Ni de acuerdo, ni en desacuerdo","Totalmente de acuerdo","De acuerdo","Totalmente en desacuerdo","De acuerdo",19

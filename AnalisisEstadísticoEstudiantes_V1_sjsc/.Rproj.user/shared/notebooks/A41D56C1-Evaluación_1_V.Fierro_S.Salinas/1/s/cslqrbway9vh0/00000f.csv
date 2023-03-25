@@ -1,0 +1,5 @@
+"0","pi<-1-pnorm(1,mean(Estudi$Ingreso),sd(Estudi$Ingreso))"
+"0","cat(""probabilidad de que el ingreso sea de más de $1.000.000 es:"",pi)"
+"1","probabilidad de que el ingreso sea de más de $1.000.000 es:"
+"1"," "
+"1","0.7963727"

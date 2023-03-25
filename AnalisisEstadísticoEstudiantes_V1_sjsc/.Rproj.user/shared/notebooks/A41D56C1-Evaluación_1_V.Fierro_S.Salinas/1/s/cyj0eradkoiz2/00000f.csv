@@ -1,0 +1,8 @@
+"0","E<-round(n*(1-p))"
+"0",""
+"0","cat(""El número esperado o medio de estudiantes que no fuman es :"",E, "" Alumnos"" )"
+"1","El número esperado o medio de estudiantes que no fuman es :"
+"1"," "
+"1","16"
+"1"," "
+"1"," Alumnos"

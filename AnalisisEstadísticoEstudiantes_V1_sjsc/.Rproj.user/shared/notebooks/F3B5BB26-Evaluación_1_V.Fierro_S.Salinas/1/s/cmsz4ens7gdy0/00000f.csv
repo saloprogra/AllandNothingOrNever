@@ -1,0 +1,4 @@
+"0","Estudi3<-Estud[,c(""Clases_virtuales"",""Estadistica"",""inseguridad"",""vida_cotidiana"",""Puntaje"")]"
+"0","head(Estudi3,6) %>% "
+"0","  kable(booktabs = TRUE,format = ""latex"", caption = ""\\label{tabla4}Presentación Tercera Mitad tabla Actual a Trabajar"") %>% "
+"0","  kable_styling( latex_options = c(""striped"", ""condensed"",""hold_position"",""scale_down""), position=""left"")"

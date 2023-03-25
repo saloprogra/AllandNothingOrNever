@@ -1,0 +1,6 @@
+"0","pn<-pnorm(1.5,mean(Estudi$Ingreso),sd(Estudi$Ingreso))"
+"0",""
+"0","cat(""La probabilidad de que el ingreso sea a lo más de $1.500.000 es: "", pn)"
+"1","La probabilidad de que el ingreso sea a lo más de $1.500.000 es: "
+"1"," "
+"1","0.551018"
